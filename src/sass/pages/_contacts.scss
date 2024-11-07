@@ -1,0 +1,112 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.s-contacts {
+  .contact {
+    padding: 39px 0 67px 0;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+    }
+
+    &__title, &__info {
+      @include fontSize(14, 16);
+    }
+
+    &__title {
+      display: block;
+      margin-top: 24px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 8px;
+      }
+    }
+
+    & i {
+
+      @include fontSize(26, 60);
+      color: rgba(180, 102, 80, 1);
+    }
+
+
+  }
+
+  &__cta {
+    background-color: #D8D6D1;
+    padding: 20px 0;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 100vw;
+      background: #D8D6D1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      margin-left: calc((-100vw + 100%) / 2);
+      z-index: -1;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      padding: 12px 12px 0 12px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute !important;
+
+    &--wrap {
+      height: 550px;
+
+      z-index: 1;
+    }
+  }
+}
+
+.s-cta {
+  padding: 92px 0 100px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 34px 0 40px 0;
+  }
+
+  & .heading {
+
+    @include fontSize(35, 100);
+    color: rgba(180, 102, 80, 1);
+  }
+
+  & .text {
+    font-family: 'TTRamillas', serif;
+    @include fontSize(20, 25);
+    line-height: 1.68;
+    max-width: 400px;
+    margin-left: auto;
+  }
+
+  &__inner {
+    margin-top: 114px;
+    @media (max-width: $breakpoint-md) {
+      margin-top: 20px;
+    }
+  }
+
+  & .decor {
+    position: absolute;
+
+    &-1 {
+      bottom: 0;
+      right: 0;
+      @media (max-width: $breakpoint-md) {
+
+      }
+    }
+  }
+
+  &__row {
+    @media (min-width: $breakpoint-md) {
+      flex-direction: row-reverse;
+    }
+  }
+}

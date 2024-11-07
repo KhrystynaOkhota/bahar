@@ -1,0 +1,145 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.footer {
+  overflow: hidden;
+  background: rgba(43, 72, 68, 1);
+  padding: 57px 0 90px 0;
+  position: relative;
+
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #F9F4EE;
+  }
+
+  &__item {
+    &:not(&:last-child) {
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .logo {
+    &__link {
+      margin-bottom: 47px;
+      display: block;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  & .menu {
+    @media (max-width: $breakpoint-md) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      margin-bottom: 15px;
+      @media (max-width: $breakpoint-md) {
+        flex: 0 0 50%;
+        margin-bottom: 14px;
+      }
+
+      & a {
+        font-size: 16px;
+
+        color: rgba(249, 244, 238, 0.5);
+      }
+    }
+  }
+
+  & .contact {
+    &__item {
+      & + .contact__item {
+        margin-top: 25px;
+      }
+    }
+
+    &__text {
+      color: rgba(249, 244, 238, 1);
+      font-size: 16px;
+
+      & i {
+        padding-right: 24px;
+        font-size: 25px;
+      }
+    }
+  }
+
+  & .social {
+    &__list {
+      @media (min-width: $breakpoint-md) {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    &__item {
+      & + .social__item {
+        margin-left: 18px;
+      }
+    }
+
+    &__link {
+      display: block;
+      height: 36px;
+      width: 36px;
+
+      & i {
+        font-size: 36px;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  .develop {
+
+    @media (min-width: $breakpoint-md) {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+    @media (max-width: $breakpoint-md) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 24px
+    }
+
+    &__link {
+      margin-left: 10px;
+      font-size: 18px;
+
+    }
+  }
+
+  .copyright {
+    & span, & a {
+      font-size: 16px;
+      color: rgba(249, 244, 238, 1);
+      font-weight: 300;
+    }
+
+    & span {
+      display: block;
+      margin-bottom: 30px;
+      @media (min-width: $breakpoint-md) {
+        padding-right: 48px;
+        position: relative;
+      }
+      @media (max-width: $breakpoint-md) {
+        display: block;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
