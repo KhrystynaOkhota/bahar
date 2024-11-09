@@ -84,3 +84,25 @@
 
 
 }
+
+.content-error, .content-thanks {
+  & img {
+    margin: 0 auto;
+  }
+
+  & .heading {
+    @include fontSize(32, 64);
+  }
+
+  & .description {
+    @include fontSize(20, 32);
+    max-width: 700px;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 6px;
+  }
+
+  & .btn {
+    margin-top: 30px;
+  }
+}

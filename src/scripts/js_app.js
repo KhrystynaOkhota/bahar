@@ -294,6 +294,28 @@ jQuery(function ($) {
     _functions.coolNav();
 
 
+
+    /* Function on page scroll */
+    $(window).on('scroll', function () {
+        _functions.scrollCall();
+    });
+
+    var prevScroll = 0;
+    _functions.scrollCall = function () {
+        winScr = $(window).scrollTop();
+        if (winScr > prevScroll) {
+            $('header').addClass('scrolled');
+        } else if (winScr <= 10) {
+            $('header').removeClass('scrolled');
+            prevScroll = 0;
+        };
+    };
+    _functions.scrollCall();
+
+
+
+
+
 });
 
 function scrollAnime() {

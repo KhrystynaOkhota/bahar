@@ -22,7 +22,7 @@ padding: 20px;
     -o-transition: var(--transition);
     transition: var(--transition);
     inset: 0;
-   
+
     clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
   }
 
@@ -49,14 +49,14 @@ padding: 20px;
       & > i {
         background: transparent;
         opacity: 1;
-        width: 18px;
-        height: 25px;
+        width: 10px;
+        height: 16px;
 
         &:before {
           content: "\e902";
           font-family: 'icomoon' !important;
           font-style: normal;
-          font-size: 24px;
+          font-size: 16px;
           color: rgba(255, 255, 255, 1);
           @include transition(.4);
         }

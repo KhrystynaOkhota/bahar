@@ -8,7 +8,7 @@
   width: 100%;
 
   position: fixed;
-  background: rgba(44, 72, 68, 1);;
+  background: transparent;
   z-index: 7;
   visibility: visible;
   opacity: 1;
@@ -16,9 +16,8 @@
   -o-transition: 0.25s linear;
   transition: 0.25s linear;
   height: var(--h-height);
-
-  &.transparent {
-    background: transparent;
+  &.scrolled {
+    background: rgba(44, 72, 68, 1);;
   }
 
   & .container {

@@ -2,6 +2,21 @@
 @import "../abstracts/variables";
 
 .s-contacts {
+
+  & .heading {
+    color: rgba(180, 102, 80, 1);
+    margin-bottom: 13px;
+    margin-top: 90px;
+    font-size: 60px;
+    font-size: -webkit-calc(36px +(60 - 36)*((100vw - 300px) /(1920 - 300)));
+    font-size: -moz-calc(36px +(60 - 36)*((100vw - 300px) /(1920 - 300)));
+    font-size: calc(36px +(60 - 36)*((100vw - 300px) /(1920 - 300)));
+
+    &:after {
+      background: rgba(180, 102, 80, 1);
+    }
+  }
+
   .contact {
     padding: 39px 0 67px 0;
     @media (max-width: $breakpoint-md) {

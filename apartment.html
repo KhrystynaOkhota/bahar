@@ -209,7 +209,7 @@
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column ">
                     <div class="catalog-sort d-flex align-right align-middle">
-                        <span>Сортування:</span>
+                        <span class="text-uppercase">Сортировать по</span>
                         <div class="select-box type-1">
                             <select class="default">
                                 <option value="type-1">Площади помещения</option>
@@ -456,7 +456,15 @@
             search: true,
             searchText: ''
         });
-        $('.extra-select').SumoSelect({ placeholder: '', search: true, searchText: '', okCancelInMulti: true, csvDispCount: 0, nativeOnDevice: [], is_floating: false });
+        $('.extra-select').SumoSelect({
+            placeholder: '',
+            search: true,
+            searchText: '',
+            okCancelInMulti: true,
+            csvDispCount: 0,
+            nativeOnDevice: [],
+            is_floating: false
+        });
         $('.btnOk').text(btnText);
     }
 </script>

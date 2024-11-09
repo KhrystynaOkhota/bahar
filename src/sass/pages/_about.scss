@@ -4,17 +4,31 @@
 .number {
   &__item {
     margin-bottom: 24px;
+    @media (max-width: $breakpoint-md) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   &__heading {
     color: $accent-color;
     margin-right: 19px;
     width: 105px;
+    font-size: 60px;
+    font-style: italic;
+    font-family: 'FontspringDEMOTheseasons', serif;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      margin: 0;
+    }
   }
 
   &__text {
     max-width: 200px;
-    font-size: 17px;
+    @include fontSize(14, 17);
   }
 }
 
@@ -23,8 +37,15 @@
 
   }
 
-  &__item {
+  &__text {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
 
+  &__item {
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+    }
   }
 
   &__icon {
@@ -107,15 +128,6 @@
       margin-top: 53px;
     }
 
-    &__heading {
-      font-size: 60px;
-      font-style: italic;
-      font-family: 'FontspringDEMOTheseasons', serif;
-      @media (max-width: $breakpoint-md) {
-        width: 100%;
-        margin: 0;
-      }
-    }
 
     &__item {
       @media (min-width: $breakpoint-md) {
@@ -143,7 +155,7 @@
 }
 
 .s-numbers {
-  padding: 71px 0;
+  padding: 50px 0 47px 0;
 }
 
 .s-gallery {
@@ -277,4 +289,51 @@
       right: 0;
     }
   }
+}
+
+.s-about {
+  & .heading {
+    margin-bottom: 22px;
+    color: rgba(180, 102, 80, 1);
+    @include fontSize(36, 60);
+    &:after{
+      background-color: rgba(180, 102, 80, 1);
+    }
+  }
+
+  & .description {
+    margin-bottom: 28px;
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  & .btn {
+    &:nth-child(1) {
+      margin-right: 20px;
+    }
+
+    &__wrap {
+
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    &-wrap {
+      margin-left: calc((-100vw + 1305px) / 2);
+      padding-bottom: 100%;
+      left: -10px;
+      position: relative;
+      overflow: hidden;
+      display: block;
+    }
+  }
+
 }
