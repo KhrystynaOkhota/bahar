@@ -1,0 +1,14 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.s-infrastructure-detail {
+  & .gallery {
+    &-filter {
+      margin-bottom: 39px;
+    }
+
+    &__item {
+
+    }
+  }
+}

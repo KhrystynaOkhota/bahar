@@ -50,50 +50,34 @@
     margin: 0 auto;
   }
 
-  & .description {
-    margin-bottom: 40px;
+  & .heading {
+    @include fontSize(32, 64);
     @media (max-width: $breakpoint-md) {
-      margin-bottom: 32px;
+      margin-bottom: 14px;
+    }
+  }
+
+  & .description {
+    @include fontSize(20, 32);
+    margin-bottom: 31px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 13px;
     }
   }
 
   & .btn-primary {
-    width: 100%;
-    max-width: 180px;
-
     margin: 0 auto;
   }
 
   &.thanks {
-    @media (max-width: $breakpoint-md) {
-      padding: 152px 0;
-      & .img {
-        max-width: 132px;
-        margin-bottom: 108px;
-        margin-left: 0;
-        margin-right: auto;
-      }
-      & .decor-bg {
-        top: -152px;
-      }
-
+    & .heading {
+      margin-bottom: 6px;
     }
   }
 
   &.error {
-    @media (min-width: $breakpoint-md) {
-      & .img {
-        max-width: 100%;
-      }
-    }
-    @media (max-width: $breakpoint-md) {
-      padding: 123px 0;
-      & .img {
-        margin-bottom: 80px;
-      }
-      & .decor-bg {
-        top: -123px;
-      }
+    & .heading {
+      margin-bottom: 30px;
 
     }
   }

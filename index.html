@@ -26,12 +26,10 @@
     <div class=" container">
         <div class="header__inner d-flex align-middle align-justify">
 
-            <a href="index.html" class="logo__wrap">
-                <img src="assets/img/logo-header.svg" alt="Bahar" class="logo">
-            </a>
+
             <div class="d-flex align-right align-middle">
 
-                <div class="burger__wrap js-header d-flex align-middle align-left">
+                <div class="burger__wrap h-burger d-flex align-middle align-left">
                     <div class="burger">
                         <span></span>
                         <span></span>
@@ -39,12 +37,14 @@
                     </div>
                     <div class="burger__title d-none d-md-block text-light">Меню</div>
                 </div>
-
-                <a href="" class="btn-transparent d-none d-md-inline-block">Выбрать квартиру</a>
+                <a href="index.html" class="logo__wrap">
+                    <img src="assets/img/logo-header.svg" alt="Bahar" class="logo">
+                </a>
+                <a href="" class=" btn btn-transparent d-none d-md-inline-block">Выбрать квартиру</a>
             </div>
 
             <div class="d-flex align-right align-middle">
-                <a href="tel:000000000000" target="_blank" class="phone text-s text-semibold">+0 000 000 00
+                <a href="tel:000000000000" target="_blank" class="phone text-s text-regular">+0 000 000 00
                     00</a>
                 <div class="lang__wrap --relative">
                     <div class="lang__current d-flex align-middle">
@@ -60,117 +60,261 @@
                 </div>
 
             </div>
-            <div class="navbar">
+
+
+            <!-- <div class="h-menu">-->
+            <div class="h-menu">
+
                 <ul class="menu">
                     <li class="menu-item ">
-                        <a href="about.html">Про нас </a>
+                        <a href="about.html">О проекте</a>
                     </li>
                     <li class="menu-item ">
-                        <a href="direction.html">Напрямки діяльності</a>
+                        <a href="apartment.html">Квартиры</a>
                     </li>
                     <li class="menu-item ">
-                        <a href="social-responsibility.html">Соціальна відповідальність </a>
+                        <a href="contacts.html">Контакты</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="blog.html">Инфраструктура</a>
                     </li>
                     <li class="menu-item">
-                        <a href="blog.html">Новини</a>
+                        <a href="contacts.html">Застройщик</a>
                     </li>
                     <li class="menu-item">
-                        <a href="contacts.html">Контакти</a>
+                        <a href="blog.html">Расположение</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog.html">Отдел продаж</a>
                     </li>
                 </ul>
+
+                <ul class="social__list">
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <i class="icon-pinterest"></i>
+                        </a>
+                    </li>
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <i class="icon-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <i class="icon-tik-tok"></i>
+                        </a>
+                    </li>
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <i class="icon-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <i class="icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social__item align-middle">
+                        <a href="" class="social__link">
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+
+
             </div>
+
+            <!-- </div>-->
+
         </div>
     </div>
 </header>
 
 
 <main class="main overlap">
+    <!--
+        <section class="s-hero swiper-entry section__wrap">
+            <div class="container-fluid p-0 --relative">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="s-hero__slider">
+                            <div class="swiper-container"
+                                 data-options='{ "parallax":false, "slidesPerView":1, "spaceBetween": 0, "loop": true, "customFraction": true, "breakpoints": {"575": {"slidesPerView": 1,"spaceBetween": 0}, "992": {"slidesPerView": 1}, "1200": {"slidesPerView": 1},"1400": {"slidesPerView": 1}}}'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="main-slide">
+                                            <div class="bg desktop bgLoaded"
 
-    <section class="s-hero swiper-entry section__wrap">
-        <div class="container-fluid p-0 --relative">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="s-hero__slider">
-                        <div class="swiper-container"
-                             data-options='{ "parallax":false, "slidesPerView":1, "spaceBetween": 0, "loop": true, "customFraction": true, "breakpoints": {"575": {"slidesPerView": 1,"spaceBetween": 0}, "992": {"slidesPerView": 1}, "1200": {"slidesPerView": 1},"1400": {"slidesPerView": 1}}}'>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="main-slide">
-                                        <div class="bg desktop bgLoaded"
+                                                 style=" background-image: url('assets/img/news-1.png');"></div>
 
-                                             style=" background-image: url('assets/img/news-1.png');"></div>
+                                            <div class="main-slide__info">
 
-                                        <div class="main-slide__info">
-
-                                            <h1 class="main-slide__heading text-xl text-bold">We build your world for
-                                                you</h1>
+                                                <h1 class="main-slide__heading text-xl text-bold">We build your world for
+                                                    you</h1>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
 
-                                <div class="swiper-slide">
-                                    <div class="main-slide">
-                                        <img src="assets/img/decor-main.svg" alt="Klan" class="decor">
-                                        <div class="bg desktop bgLoaded"
-                                             style=" background-image: url('assets/img/news-2.png');"></div>
-                                        <div class="main-slide__info">
-                                            <img src="assets/img/logo-large.svg" alt="Klan" class="main-slide__logo">
-                                            <h2 class="main-slide__heading  text-xl text-bold">это девелоперская
-                                                компания, базирующаяся в
-                                                Баку, Азербайджан.</h2>
-                                            <div class="main-slide__description text-l">Тest
+                                    <div class="swiper-slide">
+                                        <div class="main-slide">
+                                            <img src="assets/img/decor-main.svg" alt="Klan" class="decor">
+                                            <div class="bg desktop bgLoaded"
+                                                 style=" background-image: url('assets/img/news-2.png');"></div>
+                                            <div class="main-slide__info">
+                                                <img src="assets/img/logo-large.svg" alt="Klan" class="main-slide__logo">
+                                                <h2 class="main-slide__heading  text-xl text-bold">это девелоперская
+                                                    компания, базирующаяся в
+                                                    Баку, Азербайджан.</h2>
+                                                <div class="main-slide__description text-l">Тest
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="main-slide">
+                                            <img src="assets/img/decor-main.svg" alt="Klan" class="decor">
+
+                                            <div class="bg desktop bgLoaded"
+
+                                                 style=" background-image: url('assets/img/news-1.png');"></div>
+                                            <div class="main-slide__info">
+                                                <img src="assets/img/logo-large.svg" alt="Klan" class="main-slide__logo">
+
+                                                <h2 class="main-slide__heading text-xl text-bold">это девелоперская
+                                                    компания, базирующаяся в
+                                                    Баку, Азербайджан.</h2>
+                                                <div class="main-slide__description text-l">Компания специализируется на
+                                                    строительстве жилых комплексов (ЖК) и позиционирует себя как надежный и
+                                                    легитимный партнер для инвесторов
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="main-slide">
-                                        <img src="assets/img/decor-main.svg" alt="Klan" class="decor">
+                            </div>
 
-                                        <div class="bg desktop bgLoaded"
-
-                                             style=" background-image: url('assets/img/news-1.png');"></div>
-                                        <div class="main-slide__info">
-                                            <img src="assets/img/logo-large.svg" alt="Klan" class="main-slide__logo">
-
-                                            <h2 class="main-slide__heading text-xl text-bold">это девелоперская
-                                                компания, базирующаяся в
-                                                Баку, Азербайджан.</h2>
-                                            <div class="main-slide__description text-l">Компания специализируется на
-                                                строительстве жилых комплексов (ЖК) и позиционирует себя как надежный и
-                                                легитимный партнер для инвесторов
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="swiper-button__wrap d-flex align-left">
+                                <div class="swiper-button-prev d-flex align-left align-middle text-s text-medium">
+                                    <i class="icon-ar-left"></i> Назад
+                                </div>
+                                <div class="swiper-button-next d-flex align-right align-middle text-s text-medium">
+                                    Дальше <i class="icon-ar-right"></i>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-button__wrap d-flex align-left">
-                            <div class="swiper-button-prev d-flex align-left align-middle text-s text-medium">
-                                <i class="icon-ar-left"></i> Назад
-                            </div>
-                            <div class="swiper-button-next d-flex align-right align-middle text-s text-medium">
-                                Дальше <i class="icon-ar-right"></i>
-                            </div>
+                        <div class="d-flex align-end align-justify  fraction__wrap">
+                            <div class="custom-current fraction__current text-bold"></div>
+                            <div class="custom-total fraction__total text-l"></div>
                         </div>
-                    </div>
 
-                    <div class="d-flex align-end align-justify  fraction__wrap">
-                        <div class="custom-current fraction__current text-bold"></div>
-                        <div class="custom-total fraction__total text-l"></div>
                     </div>
-
                 </div>
+
             </div>
 
-        </div>
+            <div class="btn-scroll scroll-to-content banner__scroll-down d-flex align-center align-middle">
+                <i class="icon-ar-bottom"></i>
+            </div>
+        </section>-->
 
+    <div class="main-slider section__wrap">
+        <div class="swiper-entry">
+            <div class="swiper-container"
+                 data-options='{"slidesPerView":1,"parallax":true,"loop":true,"autoplay":{"delay":7000},"speed":1000}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-slide">
+                            <div class="bg desktop"
+                                 data-bg="https://www.terrazza.com.ua/wp-content/uploads/2024/10/indoor2.png"
+                                 data-swiper-parallax="30%"></div>
+                            <div class="main-slide-info">
+                                <div class="main-slide-caption" data-swiper-parallax-duration="3000"
+                                     data-swiper-parallax-opacity="0">
+                                    <h1>We build your world for you</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-slide">
+                            <div class="bg desktop"
+                                 data-bg="https://www.terrazza.com.ua/wp-content/uploads/2024/06/terrazza-1.png"
+                                 data-swiper-parallax="30%"></div>
+                            <div class="main-slide-info">
+                                <div class="main-slide-caption" data-swiper-parallax-duration="3000"
+                                     data-swiper-parallax-opacity="0">
+                                    <h2 class="h1">Найбільший салон меблів, декору та освітлення для вулиці у Львові -
+                                        Terrazza.</h2>
+                                    <p>Тепер ще більше меблів та аксесуарів для вашого дому чи закладу. Завітайте в наш
+                                        салон та оберіть меблі для вашого відпочинку - логістичний центр Порт Львів,
+                                        вул. Дорожна 58, Пасіки-Зубрицькі</p>
+                                    <a href="/shop/" class="btn btn-light">
+                                        Каталог<i></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-slide">
+                            <div class="bg desktop"
+                                 data-bg="https://www.terrazza.com.ua/wp-content/uploads/2024/10/snow-gallery-02.jpg"
+                                 data-swiper-parallax="30%"></div>
+                            <div class="main-slide-info">
+                                <div class="main-slide-caption" data-swiper-parallax-duration="3000"
+                                     data-swiper-parallax-opacity="0">
+                                    <h1>We build your world for you</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-slide">
+                            <div class="bg desktop"
+                                 data-bg="https://www.terrazza.com.ua/wp-content/uploads/2024/06/foto-117-scaled.jpg"
+                                 data-swiper-parallax="30%"></div>
+                            <div class="main-slide-info">
+                                <div class="main-slide-caption" data-swiper-parallax-duration="3000"
+                                     data-swiper-parallax-opacity="0">
+                                    <h2 class="h1">Трансформуйте свій простір під відкритим небом з Terrazza.</h2>
+                                    <p>Забезпечуємо наших клієнтів найкращими меблями та аксесуарами на тераси,
+                                        подвір'я, сади, балкони, спа, літні майданчики та не тільки.</p>
+                                    <a href="/shop/" class="btn btn-light">
+                                        Каталог<i></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-slide">
+                            <div class="bg desktop"
+                                 data-bg="https://www.terrazza.com.ua/wp-content/uploads/2024/06/img_1699.jpg"
+                                 data-swiper-parallax="30%"></div>
+                            <div class="main-slide-info">
+                                <div class="main-slide-caption" data-swiper-parallax-duration="3000"
+                                     data-swiper-parallax-opacity="0">
+                                    <h2 class="h1">Наші клієнти</h2>
+                                    <p>Портфоліо наших клієнтів - місце для натхнення та нових ідей</p>
+                                    <a href="/portfolio/" class="btn btn-light">
+                                        Портфоліо<i></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
         <div class="btn-scroll scroll-to-content banner__scroll-down d-flex align-center align-middle">
             <i class="icon-ar-bottom"></i>
         </div>
-    </section>
+    </div>
 
 
     <section class="s-benefit">
@@ -417,127 +561,199 @@
         </div>
     </section>
 
-
-    <section class="s-location">
+    <section class="s-video">
         <div class="container">
-            <div class="row s-news__top mb-32">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-justify align-middle">
-                    <h3 class="heading text-bold decor text-xl --relative">Последние новости </h3>
-                    <a href="" class="btn btn-primary  d-none d-md-inline-block">Все новости<i class="icon-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row m-row blog-main">
-                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12 column">
-                    <div class="article__img-wrap --half --relative">
-                        <img src="assets/img/news-1.png" alt="" class="article__img">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
-                    <div class="blog-main__info">
-                        <div class="article__date text-s --relative">
-                            12.05.24
-                        </div>
-                        <div class="article__title text-m text-semibold">
-                            Quis nostrud exercitation ullamco laboris nisi ut
-                        </div>
-                        <div class="article__text --large text-s editor-style mb-32">
-                            <p>Даль журчит по всей стране и обеспечивает ее всеми необходи Даль журчит по всей стране и
-                                обеспечивает ее всеми необходи Даль журчит по всей стране и обеспечивает ее всеми
-                                необходи Даль журчит по всей стране и
-                                обеспечивает ее всеми необходи</p>
-                            <p>Даль журчит по всей стране и обеспечивает ее всеми необходи Даль журчит по всей стране и
-                                обеспечивает ее всеми необходи </p>
-                        </div>
-                        <a href="" class="article__btn">Читать полностью<i class="icon-right"></i> </a>
-                    </div>
-                </div>
-
-            </div>
             <div class="row m-row">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
-                    <div class="article__item">
-                        <div class="article__img-wrap --relative">
-                            <img src="assets/img/news-1.png" alt="" class="article__img">
-                        </div>
-                        <div class="article__info">
-                            <div class="article__date text-s --relative">
-                                12.05.24
-                            </div>
-                            <div class="article__title text-m text-semibold">
-                                Quis nostrud exercitation ullamco laboris nisi ut
-                            </div>
-                            <div class="article__text text-s">
-                                Даль журчит по всей стране и обеспечивает ее всеми необходи...
-                            </div>
-                            <a href="" class="article__btn">Читать полностью<i class="icon-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
-                    <div class="article__item">
-                        <div class="article__img-wrap --relative">
-                            <img src="assets/img/news-2.png" alt="" class="article__img">
-                        </div>
-                        <div class="article__info">
-                            <div class="article__date text-s --relative">
-                                12.05.24
-                            </div>
-                            <div class="article__title text-m text-semibold">
-                                Quis nostrud exercitation ullamco laboris nisi ut
-                            </div>
-                            <div class="article__text text-s">
-                                Даль журчит по всей стране и обеспечивает ее всеми необходи...
-                            </div>
-                            <a href="" class="article__btn">Читать полностью<i class="icon-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
-                    <div class="article__item">
-                        <div class="article__img-wrap --relative">
-                            <img src="assets/img/news-3.png" alt="" class="article__img">
-                        </div>
-                        <div class="article__info">
-                            <div class="article__date text-s --relative">
-                                12.05.24
-                            </div>
-                            <div class="article__title text-m text-semibold">
-                                Quis nostrud exercitation ullamco laboris nisi ut
-                            </div>
-                            <div class="article__text text-s">
-                                Даль журчит по всей стране и обеспечивает ее всеми необходи...
-                            </div>
-                            <a href="" class="article__btn">Читать полностью<i class="icon-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
-                    <div class="article__item">
-                        <div class="article__img-wrap --relative">
-                            <img src="assets/img/news-1.png" alt="" class="article__img">
-                        </div>
-                        <div class="article__info">
-                            <div class="article__date text-s --relative">
-                                12.05.24
-                            </div>
-                            <div class="article__title text-m text-semibold">
-                                Quis nostrud exercitation ullamco laboris nisi ut
-                            </div>
-                            <div class="article__text text-s">
-                                Даль журчит по всей стране и обеспечивает ее всеми необходи...
-                            </div>
-                            <a href="" class="article__btn">Читать полностью<i class="icon-right"></i> </a>
-                        </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column text-right">
+                    <h3 class="heading-font heading decor-left --relative">The <em>best</em> time</h3>
+                    <div class="text text-uppercase">С нами настанет лучшая пора вашей жизни!
                     </div>
                 </div>
             </div>
-            <a href="" class="btn btn-primary d-inline-block d-md-none">Все новости<i class="icon-right"></i> </a>
+        </div>
+        <div class="container-fluid">
+            <div class="row m-row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
+                    <div class="video-full video-block video-with-control">
+                        <div class="video" data-src="https://royaldi.com/wp-content/uploads/2024/01/sample-5s.mp4">
+                            <video muted="" playsinline="" loop="" preload=""
+                                   poster="https://royaldi.com/wp-content/uploads/2023/11/img-12.jpg"
+                                   src="https://royaldi.com/wp-content/uploads/2024/01/sample-5s.mp4"></video>
+                        </div>
+                        <div class="btn-control btn-play">
+                            <i class="control play-video"><img
+                                    src="https://royaldi.com/wp-content/themes/royaldi/img/icons/play.svg" width="33"
+                                    height="34" alt="Play"
+                                    data-lazy-src="https://royaldi.com/wp-content/themes/royaldi/img/icons/play.svg"
+                                    data-pagespeed-url-hash="275873032"
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                                    data-ll-status="loaded" class="entered lazyloaded">
+                                <noscript><img src="https://royaldi.com/wp-content/themes/royaldi/img/icons/play.svg"
+                                               width="33" height="34" alt="Play" data-pagespeed-url-hash="213265624">
+                                </noscript>
+                            </i>
+                            <i class="control pause-video"><img
+                                    src="https://royaldi.com/wp-content/themes/royaldi/img/icons/pause.svg" width="24"
+                                    height="24" alt="Pause"
+                                    data-lazy-src="https://royaldi.com/wp-content/themes/royaldi/img/icons/pause.svg"
+                                    data-pagespeed-url-hash="2989145831"
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                                    data-ll-status="loaded" class="entered lazyloaded">
+                                <noscript><img src="https://royaldi.com/wp-content/themes/royaldi/img/icons/pause.svg"
+                                               width="24" height="24" alt="Pause" data-pagespeed-url-hash="1424398826">
+                                </noscript>
+                            </i>
+                        </div>
+                        <div class="h2 title clr-white text-center">VENICE SHINE 2 test</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-location --relative">
+        <img src="assets/img/decor-2.svg" alt="" class="decor decor-1">
+        <div class="container">
+            <div class="row m-row swiper-entry s-location__inner">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+                    <div class="img__wrap --relative">
+                        <img src="assets/img/location.png" alt="" class="img">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+                    <h3 class="heading heading-font text-regular text-xl --relative">Расположение</h3>
+                    <div class="--relative">
+                        <div class="swiper-container"
+                             data-options='{"slidesPerView":1, "spaceBetween": 15, "speed": 1200, "effect": "fade", "autoHeight": true, "centeredSlides": false,"loop": true}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="location__item">
+
+                                        <div class="location__title text-uppercase">
+                                            аэропорт 1
+                                        </div>
+                                        <div class="location__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                            laoreet id
+                                            donec ultrices.
+                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                            pellentesque
+                                            elit ullamcorper dignissim cras tincidunt.
+                                            Porttitor rhoncus dolor purus non enim praesent elementum.
+                                        </div>
+
+                                        <a href="" class="btn btn-transparent">
+                                            подробнее
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="location__item">
+
+                                        <div class="location__title text-uppercase">
+                                            аэропорт 2
+                                        </div>
+                                        <div class="location__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                            laoreet id
+                                            donec ultrices.
+                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                            pellentesque
+                                            elit ullamcorper dignissim cras tincidunt.
+                                            Porttitor rhoncus dolor purus non enim praesent elementum.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="location__item">
+
+                                        <div class="location__title text-uppercase">
+                                            аэропорт 3
+                                        </div>
+                                        <div class="location__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                            laoreet id
+                                            donec ultrices.
+                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                            pellentesque
+                                            elit ullamcorper dignissim cras tincidunt.
+                                            Porttitor rhoncus dolor purus non enim praesent elementum.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="location__item">
+
+                                        <div class="location__title text-uppercase">
+                                            аэропорт 4
+                                        </div>
+                                        <div class="location__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                            laoreet id
+                                            donec ultrices.
+                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                            pellentesque
+                                            elit ullamcorper dignissim cras tincidunt.
+                                            Porttitor rhoncus dolor purus non enim praesent elementum.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                            laoreet id
+                                            donec ultrices.
+                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                            pellentesque
+                                            elit ullamcorper dignissim cras tincidunt.
+                                            Porttitor rhoncus dolor purus non enim praesent elementum.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="location__item">
+
+                                        <div class="location__title text-uppercase">
+                                            аэропорт 5
+                                        </div>
+                                        <div class="location__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                            laoreet id
+                                            donec ultrices.
+                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                            pellentesque
+                                            elit ullamcorper dignissim cras tincidunt.
+                                            Porttitor rhoncus dolor purus non enim praesent elementum.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s-contacts">
         <div class="container overlap">
+            <div class="">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3 class="heading heading-font decor-right --relative">Контакты</h3>
+                </div>
+            </div>
             <div class="row m-row ">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
                     <div class="contact text-center">
@@ -639,14 +855,16 @@
     <div class="container">
         <div class="row m-row">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
-                <a href="index.html" class="logo__linl">
-                    <img src="assets/img/logo.svg" alt="Klan" class="logo">
-                </a>
-                <div class="copyright">
-                    <span>© Bahar Residence | 2023 </span>
-                    <a href="">Политика конфиденциальности</a>
+                <div>
+                    <a href="index.html" class="logo__link">
+                        <img src="assets/img/logo.svg" alt="Bahar" class="logo">
+                    </a>
+                    <div class="copyright">
+                        <span class="d-none d-md-block">© Bahar Residence | 2023 </span>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
                 </div>
-                <div class="develop d-flex align-middle align-right">
+                <div class="develop d-flex">
                     <div class="develop__text">Розробка</div>
                     <a href="" class="d-inline-flex align-items-center develop__link">
                         WEBTUNE
@@ -877,5 +1095,24 @@
         initializeMap();
     });
 </script>
+
+<script>
+    //play & stop Video
+    $(document).on('click', '.btn-play .control', function () {
+        let videoItem = $(this).closest('.video-with-control').find('video').get(0);
+
+        if (videoItem.paused) {
+            videoItem.play();
+            $(this).closest('.video-full').find('video').attr('controls', '');
+            $(this).closest('.btn-control').addClass('paused');
+        } else {
+            videoItem.pause();
+            $(this).closest('.video-full').find('video').removeAttr('controls');
+            $(this).closest('.btn-control').removeClass('paused');
+        }
+    });
+</script>
+
+
 </body>
 </html>
