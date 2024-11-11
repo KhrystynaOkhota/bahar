@@ -92,9 +92,16 @@
   }
 
   &__img {
+    width: 65%;
+    height: 65%;
+
     &-wrap {
       height: 120px;
       width: 120px;
+      @media (max-width: $breakpoint-md) {
+        height: 60px;
+        width: 60px;
+      }
 
       &:after {
         content: '';
@@ -116,16 +123,14 @@
 .s-introduce {
   & .heading {
     margin-bottom: 12px;
-    font-size: 100px;
-    font-size: -webkit-calc(36px + (100 - 36) * ((100vw - 300px) / (1920 - 300)));
-    font-size: -moz-calc(36px + (100 - 36) * ((100vw - 300px) / (1920 - 300)));
-    font-size: calc(36px + (100 - 36) * ((100vw - 300px) / (1920 - 300)));
-    color: #b46650;
   }
 
   & .number {
     &__wrap {
       margin-top: 53px;
+      @media (max-width: $breakpoint-md) {
+        margin-top: 16px;
+      }
     }
 
 
@@ -160,11 +165,13 @@
 
 .s-gallery {
   padding: 55px 0 95px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 31px 0;
+  }
 
   & .heading {
     margin-bottom: 12px;
-    @include fontSize(36, 100);
-    color: #b46650;
+
   }
 
   & .text {
@@ -227,9 +234,7 @@
   }
 
   & .heading {
-    @include fontSize(36, 60);
     margin-bottom: 12px;
-    color: $whiteColor;
   }
 
   & .text {
@@ -266,14 +271,17 @@
 .s-principles {
   padding: 83px 0 95px 0;
   background: #8FA399;
+  @media (max-width: $breakpoint-md) {
+    padding: 36px 0 16px 0;
+  }
 
   & .heading {
-    @include fontSize(36, 60);
+
   }
 
   & .text {
     margin-bottom: 42px;
-
+    color: #fff;
     @include fontSize(14, 25);
     font-family: 'TTRamillas', serif;
     line-height: 1.68;
@@ -287,6 +295,12 @@
       width: 58%;
       bottom: 0;
       right: 0;
+      @media (max-width: $breakpoint-md) {
+        position: relative;
+        width: calc(100% + 15px);
+        margin-top: 20px;
+        left: -15px;
+      }
     }
   }
 }
@@ -294,11 +308,6 @@
 .s-about {
   & .heading {
     margin-bottom: 22px;
-    color: rgba(180, 102, 80, 1);
-    @include fontSize(36, 60);
-    &:after{
-      background-color: rgba(180, 102, 80, 1);
-    }
   }
 
   & .description {

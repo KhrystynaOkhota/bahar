@@ -299,6 +299,17 @@
       }
     }
   }
+
+  &__logo {
+    width: 215px;
+    height: 134px;
+    margin: 0 auto;
+    @media (max-width: $breakpoint-md) {
+      width: 102px;
+      height: 63.57px;
+      margin-bottom: 7px;
+    }
+  }
 }
 
 .banner > .container {
@@ -334,32 +345,11 @@
 }
 
 
-.s-infrastructure {
-  padding: 83px 0 79px 0;
-  background: rgba(143, 163, 153, 1);
-
-  & .heading {
-    margin-bottom: 30px;
-    @include fontSize(36, 60);
-    color: #fff;
-
-    &:after {
-      background: #fff;
-    }
-  }
-}
-
 .s-video {
   background: rgba(143, 163, 153, 1);
 
   & .heading {
     margin-bottom: 10px;
-    @include fontSize(40, 100);
-    color: rgba(255, 255, 255, 1);
-
-    &:after {
-      background-color: rgba(255, 255, 255, 0.6);
-    }
   }
 
   & .text {
@@ -461,8 +451,8 @@
     cursor: pointer;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     display: inline-block;
     width: 45%;
     height: 45%
@@ -482,101 +472,11 @@
     opacity: 0;
     visibility: hidden
   }
+
   @media (min-width: 1200px) {
     .btn-control:hover {
       opacity: .7;
       visibility: visible;
-    }
-  }
-}
-
-.s-location {
-  background: rgba(180, 102, 80, 1);
-  padding: 179px 0;
-  color: #fff;
-  @media (max-width: $breakpoint-md) {
-    padding: 23px 0 35px 0;
-  }
-
-  &__inner {
-    @media (min-width: $breakpoint-lg) {
-      flex-direction: row-reverse;
-    }
-  }
-
-  & .heading {
-    margin-bottom: 70px;
-    margin-top: 42px;
-  }
-
-  & .decor {
-    position: absolute;
-
-    &-1 {
-      top: 0;
-      left: 0;
-    }
-  }
-
-  & .img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-
-    &__wrap {
-      position: relative;
-      padding-bottom: 70.5%;
-    }
-  }
-
-  & .location {
-    &__title {
-      margin-bottom: 32px;
-      @media (max-width: $breakpoint-md) {
-        margin-bottom: 18px;
-      }
-    }
-
-    &__text {
-      margin-bottom: 70px;
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 17px;
-      line-height: 1.4;
-    }
-  }
-
-  .swiper {
-    &-slide {
-      background: rgba(180, 102, 80, 1);
-    }
-
-    &-pagination {
-      position: absolute;
-      top: 0;
-      right: calc(100% + 34px);
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-
-      &-bullet {
-        font-size: 16px;
-        color: rgba(255, 255, 255, .5);
-        width: auto;
-        height: auto;
-        background: transparent;
-        border-radius: 0;
-        margin: 0;
-
-        &:not(&:last-child) {
-          margin-bottom: 35px;
-        }
-
-        &-active {
-          font-size: 30px;
-        }
-      }
     }
   }
 }

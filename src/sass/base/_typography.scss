@@ -127,9 +127,12 @@
       position: absolute;
       top: 50%;
       right: calc(100% + 40px);
-      background-color: rgba(180, 102, 80, 0.6);
+
       width: 100000%;
       transform: translateY(-50%);
+      @media (max-width: $breakpoint-md) {
+        right: calc(100% + 14px);
+      }
     }
   }
 
@@ -142,9 +145,11 @@
       position: absolute;
       top: 50%;
       left: calc(100% + 40px);
-      background-color: #2C61AD;
       width: 100000%;
       transform: translateY(-50%);
+      @media (max-width: $breakpoint-md) {
+        left: calc(100% + 14px);
+      }
     }
   }
 
@@ -157,11 +162,28 @@
     letter-spacing: 0.19em;
     color: $accent-color;
   }
+
+  &-accent {
+    color: rgba(180, 102, 80, 1);;
+
+    &:after {
+      background-color: rgba(180, 102, 80, 0.6);;
+    }
+  }
+
+  &:not(&.heading-accent) {
+    color: rgba(255, 255, 255, 1);
+
+    &:after {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }
 
 .h1 {
   @include fontSize(48, 100);
 }
+
 .h2 {
   @include fontSize(36, 60);
 }
