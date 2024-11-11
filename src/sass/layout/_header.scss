@@ -16,7 +16,9 @@
   -o-transition: 0.25s linear;
   transition: 0.25s linear;
   height: var(--h-height);
-
+  @media (max-width: $breakpoint-md) {
+    height: auto;
+  }
   &.scrolled {
     background: rgba(44, 72, 68, 1);;
   }
