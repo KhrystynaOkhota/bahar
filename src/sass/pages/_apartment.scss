@@ -98,8 +98,14 @@
     &__buttons {
     }
 
-    & .btn-primary, .btn-white {
+    & .btn-primary {
       width: 100%;
+      padding: 19px 0;
+      &.white{
+        @media (max-width: $breakpoint-md) {
+          margin-top: 10px;
+        }
+      }
     }
   }
 
@@ -191,12 +197,25 @@
 
   &-item {
     position: relative;
-    padding: 19px 28px 24px 28px;
-    //border-bottom: solid 1px rgba(112, 112, 112, 1);
+    padding: 20px 28px 19px 28px;
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     overflow: hidden;
-
+    clip-path: polygon(0 8px,8px 0,calc(100% - 8px) 0,100% 8px,100% calc(100% - 8px),calc(100% - 8px) 100%,8px 100%,0 calc(100% - 8px));
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      inset: 0;
+      background:rgba(231, 221, 211, 1);
+      clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
+    }
 
     &:not(&:last-child) {
       margin-bottom: 15px;
@@ -218,27 +237,58 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    @include fontSize(14, 16);
+    line-height: 1.08;
     color: rgba(255, 255, 255, 1);
     padding-bottom: 3px;
-    text-shadow: -.25px -.25px 0 transparent,
-    .25px .25px transparent;
-    text-transform: uppercase;
+
 
     & i {
-      color: rgba(29, 31, 33, 1);
-      font-size: 25px;
-      transform: rotate(-45deg);
-      @include transition(.5)
 
+      height: 18px;
+      width: 18px;
+      position: relative;
+
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+      }
+
+      &::before {
+        width: 2px;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        -webkit-transition: .3s;
+        transition: .3s;
+      }
+
+      &::after {
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
+
 
     &.is-active {
 
 
-      & i {
-        color: rgba(146, 192, 84, 1);
-        transform: rotate(45deg);
+      & i::before {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
       }
+
+
     }
 
   }
@@ -251,6 +301,25 @@
     padding-left: 0;
     -webkit-transition: padding-left var(--transition-1);
     transition: padding-left var(--transition-1);
+
+    & .text {
+      & p {
+       font-size: 14px;
+
+        font-weight: 400;
+        line-height: 1.28;
+        letter-spacing: 0.05em;
+
+      }
+      & > * {
+        &:not(&:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+
+
   }
 }
 
@@ -303,25 +372,12 @@
     padding: 20px 0 40px 0;
   }
 
-  & .heading {
-    color: rgba(180, 102, 80, 1);
 
-    &:after {
-      background: rgba(180, 102, 80, 1);
-    }
-  }
 }
 
 .s-selling {
   background: rgba(143, 163, 153, 1);
 
-  & .heading {
-    color: rgba(255, 255, 255, 1);
-
-    &:after {
-      background: rgba(255, 255, 255, 0.6);
-    }
-  }
 
   .editor-style {
     & p {
@@ -450,6 +506,7 @@
       background: rgba(180, 102, 80, 0.6);
     }
   }
+
   & .apartment__card {
     margin-bottom: 0;
   }
