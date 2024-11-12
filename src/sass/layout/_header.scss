@@ -19,6 +19,7 @@
   @media (max-width: $breakpoint-md) {
     height: auto;
   }
+
   &.scrolled {
     background: rgba(44, 72, 68, 1);;
   }
@@ -230,7 +231,7 @@
             width: 100%;
 
             &:nth-child(1) {
-              transform: translateY(9px) rotate(45deg);
+              transform: translateY(6.5px) rotate(45deg);
             }
 
             &:nth-child(2) {
@@ -238,7 +239,7 @@
             }
 
             &:nth-child(3) {
-              transform: translateY(-9px) rotate(-45deg);
+              transform: translateY(-8px) rotate(-45deg);
             }
           }
         }
@@ -250,6 +251,10 @@
 
 :root {
   --h-height: 8.625rem;
+
+  @media (max-width: $breakpoint-md) {
+    --h-height: 5.25rem;
+  }
   //--h-logo-width: clamp(12.25rem, -7.3452rem + 21.7573vw, 15.5rem);
 }
 
@@ -284,9 +289,7 @@ html.overflow-hidden, html.overflow-hidden body, html.overflow-menu, html.overfl
 
 
   @media (max-width: $breakpoint-md) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    max-height: 650px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -318,6 +321,12 @@ html.overflow-hidden, html.overflow-hidden body, html.overflow-menu, html.overfl
       align-items: start;
 
       padding: 43px 20px;
+    }
+
+    @media (max-width: 360px) {
+
+      padding: 30px 20px 0 20px;
+      gap: 10px;
     }
 
     &-item {
