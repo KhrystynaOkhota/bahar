@@ -13,7 +13,6 @@
   }
 
 
-
   & .heading {
     margin-bottom: 30px;
     @include fontSize(36, 60);
@@ -43,6 +42,22 @@
 
 
 .s-infrastructure-detail {
+  &__item {
+    padding: 89px 0;
+
+    &:nth-child(even) {
+      background: rgba(143, 163, 153, 1);
+    }
+  }
+
+  & .heading {
+    margin-bottom: 3px;
+  }
+
+  & .text {
+    margin-bottom: 29px;
+  }
+
   & .gallery {
     &-filter {
       margin-bottom: 39px;
@@ -51,5 +66,28 @@
     &__item {
 
     }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      &-wrap {
+        position: relative;
+        padding-bottom: 100%;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-image: url(../img/bg-mask.svg);
+        mask-image: url(../img/bg-mask.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center center;
+        mask-position: center center;
+      }
+    }
   }
 }
+
