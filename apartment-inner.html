@@ -150,18 +150,39 @@
 
     <section class="s-apart-detail">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="heading heading-accent h2 heading-font">
+
+            <div class="row m-row s-apart-detail__inner">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+                    <h2 class="heading  heading-font d-block d-md-none">
                         Ümumi Saho
                     </h2>
-
-                    <div></div>
-
+                    <div class="tabs-block">
+                        <div class="tabs-menu-wrapper  --relative">
+                            <div class="tabs-title text-uppercase">План квартиры</div>
+                            <div class="tabs-toggle active">
+                                <div class="tabs-menu text-uppercase active">План квартиры</div>
+                                <div class="tabs-menu text-uppercase">Квартира на этаже</div>
+                                <div class="tabs-menu text-uppercase">генплан</div>
+                            </div>
+                        </div>
+                        <div class="bs-xs-20 bs-sm-50 bs-md-70"></div>
+                        <div class="col-70-30 anim-2">
+                            <div class="tabs-entry">
+                                <img src="assets/img/slide-1.png" alt="">
+                            </div>
+                            <div class="tabs-entry">
+                                <img src="assets/img/slide-2.png" alt="">
+                            </div>
+                            <div class="tabs-entry">
+                                <img src="assets/img/slide-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+                    <h2 class="heading  heading-font d-none d-md-block">
+                        Ümumi Saho
+                    </h2>
                     <ul class="characteristics">
                         ﻿
                         <li class="characteristics__item">
@@ -211,18 +232,17 @@
                         </li>
                     </ul>
 
-                    <div class="btn__wrap">
-                        <button class="btn btn-primary">
+                    <div class="btn__wrap d-flex align-justify align-middle">
+                        <a href="" class="btn btn-transparent">
                             Позвонить
-                        </button>
+                        </a>
 
-                        <button class="btn btn-white">
+                        <a href="" class="btn btn-primary">
                             Заказать консультацию
-                        </button>
+                        </a>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                </div>
+
             </div>
         </div>
     </section>
@@ -586,6 +606,45 @@
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/jquery.sumoselect.min.js"></script>
 <script src="assets/js/js_app.min.js"></script>
+
+<script>
+    //tabs
+    var tabsFinish = 0;
+    $(document).on('click', '.tabs-menu', function () {
+        if ($(this).hasClass('active') || tabsFinish)
+            return false;
+        tabsFinish = 1;
+        var tabsWrapper = $(this).closest('.tabs-block')
+            , tabsMenu = tabsWrapper.find('.tabs-menu')
+            , tabsItem = tabsWrapper.find('.tabs-entry')
+            , index = tabsMenu.index(this)
+            , thist = $(this);
+        tabsWrapper.find('.tabs-title').text($(this).text()).removeClass('active');
+        tabsItem.filter(':visible').fadeOut(function () {
+            tabsItem.eq(index).css({
+                'display': 'block',
+                'opacity': '0'
+            });
+
+            tabsItem.eq(index).animate({
+                'opacity': '1'
+            }, function () {
+                tabsFinish = 0;
+                if (thist.hasClass('scroll-top')) {
+                    $('body, html').animate({
+                        'scrollTop': $('.tabs-block').offset().top - 100
+                    });
+                }
+            });
+        });
+        tabsMenu.removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $(document).on('click', '.tabs-title', function () {
+        $(this).toggleClass('active');
+    });
+</script>
 
 </body>
 </html>

@@ -1,6 +1,64 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.progress {
+  &__item {
+
+  }
+
+  &__heading {
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    color: rgba(51, 51, 51, 0.6);
+    font-size: 16px;
+    font-weight: 300;
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &-wrap {
+      position: relative;
+      padding-bottom: 72%;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-image: url(../img/bg-mask.svg);
+      mask-image: url(../img/bg-mask.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.s-location {
+  &__inner {
+    @media (min-width: $breakpoint-xl) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  & .img {
+    mix-blend-mode: multiply;
+    object-fit: contain;
+
+    &__wrap {
+      width: 100%;
+    }
+  }
+}
 
 .s-location-slider {
   background: rgba(180, 102, 80, 1);
@@ -88,6 +146,29 @@
         &-active {
           font-size: 30px;
         }
+      }
+    }
+  }
+}
+
+.s-construction-progress {
+  margin-bottom: 61px;
+
+  & .heading {
+    margin-bottom: 28px;
+  }
+}
+
+.s-quality {
+  & .heading {
+    margin-bottom: 35px;
+  }
+
+  & .benefit {
+    &__item {
+      margin-bottom: 70px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 20px;
       }
     }
   }
