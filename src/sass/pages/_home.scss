@@ -350,6 +350,7 @@
 
   & .heading {
     margin-bottom: 10px;
+    @include fontSize(40, 100);
   }
 
   & .text {
@@ -446,37 +447,16 @@
   }
 
 
-  .btn-control img {
-    position: absolute;
-    cursor: pointer;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    display: inline-block;
-    width: 45%;
-    height: 45%
-  }
 
-  .btn-control.paused .pause-video {
-    opacity: 1;
-    visibility: visible
-  }
 
-  .btn-control.paused .play-video {
-    opacity: 0;
-    visibility: hidden
-  }
+  .btn-control.btn-play {
 
-  .btn-control .pause-video {
-    opacity: 0;
-    visibility: hidden
-  }
-
-  @media (min-width: 1200px) {
-    .btn-control:hover {
-      opacity: .7;
-      visibility: visible;
+    &.paused {
+     // display: none;
+      opacity: 0;
+      visibility: hidden;
     }
   }
 }
+
+

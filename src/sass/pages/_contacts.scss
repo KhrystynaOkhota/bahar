@@ -8,9 +8,9 @@
     margin-bottom: 13px;
     margin-top: 90px;
     font-size: 60px;
-    font-size: -webkit-calc(36px +(60 - 36)*((100vw - 300px) /(1920 - 300)));
-    font-size: -moz-calc(36px +(60 - 36)*((100vw - 300px) /(1920 - 300)));
-    font-size: calc(36px +(60 - 36)*((100vw - 300px) /(1920 - 300)));
+    font-size: -webkit-calc(36px + (60 - 36) * ((100vw - 300px) / (1920 - 300)));
+    font-size: -moz-calc(36px + (60 - 36) * ((100vw - 300px) / (1920 - 300)));
+    font-size: calc(36px + (60 - 36) * ((100vw - 300px) / (1920 - 300)));
 
     &:after {
       background: rgba(180, 102, 80, 1);
@@ -78,6 +78,64 @@
       z-index: 1;
     }
   }
+
+  & .map-info {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+
+    &__inner {
+      background-color: #fff;
+      padding: 16px 20px;
+      width: max-content;
+      clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px));
+    }
+
+    &__icon {
+      position: absolute;
+      left: -11px;
+      top: -63px;
+      width: 73px;
+      height: 73px;
+      z-index: 3;
+      object-fit: contain;
+
+    }
+
+    &__location {
+      margin-bottom: 12px;
+      font-size: 16px;
+      line-height: 22px;
+      color: rgba(44, 72, 68, 1);
+    }
+
+    &__more {
+      font-size: 16px;
+      line-height: 22px;
+      color: rgba(44, 72, 68, 1);
+      cursor: pointer;
+      @include transition(.4);
+
+      & i {
+        padding-left: 16px;
+      }
+
+      &:hover {
+        color: #b46650;
+      }
+    }
+  }
+
 }
 
 .s-cta {

@@ -198,7 +198,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        -webkit-mask-size: contain;
+       /* -webkit-mask-size: contain;
         mask-size: contain;
         -webkit-mask-image: url(../img/bg-mask.svg);
         mask-image: url(../img/bg-mask.svg);
@@ -206,7 +206,8 @@
         mask-repeat: no-repeat;
         -webkit-mask-position: center center;
         mask-position: center center;
-
+*/
+        clip-path: polygon(92.948% 50.505%, 100% 57.555%, 100% 93.07%, 93.07% 100%, 7.346% 100%, 0.418% 93.07%, 0.418% 57.555%, 7.468% 50.505%, 7.764% 50.209%, 7.468% 49.913%, 0.418% 42.864%, 0.418% 7.346%, 7.346% 0.418%, 93.07% 0.418%, 100% 7.346%, 100% 42.863%, 92.948% 49.913%, 92.652% 50.209%, 92.948% 50.505%);
         &__wrap {
           position: relative;
           padding-bottom: 100%;

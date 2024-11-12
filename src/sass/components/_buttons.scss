@@ -27,7 +27,8 @@
     padding: 19px 35px;
     font-family: 'TTRamillas', serif;
     text-transform: uppercase;
-    clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px));
+    // clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px));
+    clip-path: polygon(99.029% 49.725%, 99% 50%, 99.029% 50.275%, 99.754% 57.284%, 99.754% 92.51%, 97.786% 99.167%, 2.213% 99.167%, 0.246% 92.51%, 0.246% 57.284%, 0.971% 50.275%, 1% 50%, 0.971% 49.725%, 0.246% 42.716%, 0.246% 7.488%, 2.213% 0.833%, 97.786% 0.833%, 99.754% 7.488%, 99.754% 42.716%, 99.029% 49.725%);
 
     & i {
       padding-left: 12px;
@@ -160,38 +161,33 @@
   }
 
   &-play {
-    width: 208px;
-    height: 208px;
+    background: url("../img/bg-video-btn.svg") no-repeat center center;
+    width: 139px;
+    height: 162px;
+
     z-index: 2;
-    border: 2px solid #fff;
-    border-radius: 100%;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    cursor: pointer;
     @media (max-width: $breakpoint-md) {
-      width: 66px;
-      height: 66px;
-      border: 0.64px solid #fff;
+      width: 94.38px;
+      height: 110px;
     }
 
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      background-color: rgba(255, 255, 255, 0.1);
-      z-index: -1;
-
-    }
 
     & img {
-      width: 35%;
+      width: 40px;
+      height: 44px;
+
+      @media (max-width: $breakpoint-md) {
+        width: 27.16px;
+        height: 29.88px;
+      }
+
 
       object-fit: contain;
     }
