@@ -7,6 +7,9 @@
   &:not(&.location) {
     padding: 83px 0 79px 0;
     background: rgba(143, 163, 153, 1);
+    @media (max-width: $breakpoint-md) {
+      padding: 30px 0;
+    }
   }
 
 

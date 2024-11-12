@@ -56,6 +56,7 @@
     color: rgba(255, 255, 255, 1);
 
     &-wrap {
+      opacity: 0;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -73,8 +74,18 @@
       mask-repeat: no-repeat;
       -webkit-mask-position: center center;
       mask-position: center center;
+      @include transition(.5);
+      @media (max-width: $breakpoint-md) {
+        display: none;
+      }
     }
 
+  }
+
+  &:hover {
+    & .infrastructure__desc-wrap {
+      opacity: 1;
+    }
   }
 }
 
@@ -434,7 +445,7 @@
 
   @media (max-width: 767px) {
     .video-full {
-      padding-bottom: 151%;
+      padding-bottom: 100%;
     }
 
     .video-full + :has(.btn) .btn {
@@ -447,12 +458,10 @@
   }
 
 
-
-
   .btn-control.btn-play {
 
     &.paused {
-     // display: none;
+      // display: none;
       opacity: 0;
       visibility: hidden;
     }

@@ -11,7 +11,9 @@
     font-size: -webkit-calc(36px + (60 - 36) * ((100vw - 300px) / (1920 - 300)));
     font-size: -moz-calc(36px + (60 - 36) * ((100vw - 300px) / (1920 - 300)));
     font-size: calc(36px + (60 - 36) * ((100vw - 300px) / (1920 - 300)));
-
+    @media (max-width: $breakpoint-md) {
+      margin-top:30px;
+    }
     &:after {
       background: rgba(180, 102, 80, 1);
     }
@@ -21,6 +23,19 @@
     padding: 39px 0 67px 0;
     @media (max-width: $breakpoint-md) {
       margin-bottom: 20px;
+      padding: 0;
+      text-align: left;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
 
     &__title, &__info {
@@ -31,14 +46,18 @@
       display: block;
       margin-top: 24px;
       @media (max-width: $breakpoint-md) {
-        margin-bottom: 8px;
+        margin: 0;
+        width: calc(100% - 37px);
       }
     }
 
     & i {
-
-      @include fontSize(26, 60);
+      @include fontSize(20, 60);
       color: rgba(180, 102, 80, 1);
+      padding-right: 12px;
+      @media (max-width: $breakpoint-md) {
+        font-size: 24px;
+      }
     }
 
 
@@ -76,6 +95,9 @@
       height: 550px;
 
       z-index: 1;
+      @media (max-width: $breakpoint-md) {
+        height: 350px;
+      }
     }
   }
 
@@ -92,6 +114,8 @@
 
     @media (max-width: $breakpoint-md) {
       width: 100%;
+      left: 23px;
+      transform: translate(0, -50%);
     }
 
     &__inner {
