@@ -44,9 +44,44 @@
 .s-infrastructure-detail {
   &__item {
     padding: 89px 0;
+    @media (max-width: $breakpoint-md) {
+      padding: 24px 0 43px 0;
+    }
 
     &:nth-child(even) {
       background: rgba(143, 163, 153, 1);
+      text-align: right;
+      color: #fff;
+
+
+      & .heading {
+        color: rgba(255, 255, 255, 1);
+        line-height: 1.39;
+
+        &:after {
+          right: calc(100% + 40px);
+          left: auto;
+          background: rgba(255, 255, 255, .6);
+        }
+      }
+
+      & .description {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+  }
+
+  & .description {
+    max-width: 83.33333%;
+    margin-bottom: 29px;
+    @include fontSize(14, 18);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 18px;
+      max-width: 100%;
     }
   }
 
@@ -87,6 +122,16 @@
         -webkit-mask-position: center center;
         mask-position: center center;
       }
+    }
+  }
+
+
+  .swiper-pagination {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.1);
+
+    &-progressbar-fill {
+      background: rgba(180, 102, 80, 1);
     }
   }
 }
