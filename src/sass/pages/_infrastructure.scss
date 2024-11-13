@@ -136,3 +136,42 @@
   }
 }
 
+
+.developer {
+  &__item {
+    margin-bottom: 94px;
+  }
+
+  &__heading {
+    margin-bottom: 22px;
+  }
+
+  &__description {
+    margin-bottom: 12px;
+    @include fontSize(14, 18);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+}
+
+.s-developer {
+  .number {
+    &__wrap{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 3%;
+      @media (max-width: $breakpoint-md) {
+        grid-template-columns: auto auto;
+      }
+    }
+    &__heading {
+      width:100%;
+      margin-right: 0;
+    }
+    &__{
+      @include fontSize(14,17);
+
+    }
+  }
+}
