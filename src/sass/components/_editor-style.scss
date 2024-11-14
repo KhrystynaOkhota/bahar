@@ -8,15 +8,21 @@
     font-family: 'HankenGrotesk', sans-serif;
     font-weight: normal;
     color: #565656;
-    color:$body-text;
+    color: $body-text;
+
+    & > * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
     & p {
-
-      font-weight: 400;
       @include fontSize(14, 18);
-      line-height: 130%;
-      margin-bottom: 32px;
-      color:$body-text;
+      font-weight: 300;
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+      color: rgba(0, 0, 0, 1);
+      margin-bottom: 20px;
 
       & + ul, & + ol {
         margin-top: 15px;
@@ -51,7 +57,7 @@
     }
 
     & a:not(.btn-primary) {
-      color:$accent-color;
+      color: $accent-color;
       text-decoration: none;
       position: relative;
       font-weight: bold;
@@ -122,6 +128,7 @@
       margin-bottom: 32px;
       padding-left: 30px;
       list-style-type: none;
+
       & li {
         font-weight: normal;
         @include fontSize(14, 18);

@@ -173,3 +173,15 @@
     }
   }
 }
+
+.s-guide {
+  padding: 90px 0;
+  background: rgba(143, 163, 153, 1);
+  color:#fff;
+
+  & .editor-style{
+    & * {
+      color:#fff;
+    }
+  }
+}
