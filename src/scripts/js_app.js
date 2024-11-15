@@ -460,3 +460,27 @@ if ($('.select-box').length) {
     $('.extra-select').SumoSelect({ placeholder: '', search: true, searchText: '', okCancelInMulti: true, csvDispCount: 0, nativeOnDevice: [], is_floating: false });
     $('.btnOk').text(btnText);
 }
+
+const scrollToTopButton = document.getElementById('js-top');
+const scrollFunc = () => {
+        let y = window.scrollY;
+        if (y > 0) {
+            scrollToTopButton.className = "top-link btn-top show";
+        } else {
+            scrollToTopButton.className = "top-link btn-top hide";
+        }
+    }
+;
+window.addEventListener("scroll", scrollFunc);
+const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            window.scrollTo(0, c - c / 10);
+        }
+    }
+;
+scrollToTopButton.onclick = function (e) {
+    e.preventDefault();
+    scrollToTop();
+}

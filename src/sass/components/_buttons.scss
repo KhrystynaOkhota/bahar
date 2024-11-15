@@ -69,16 +69,18 @@
     bottom: 63px;
     right: 3%;
     display: block;
-    background: red;
+    z-index: 5;
+    background: url("../img/btn-top-bg.svg") no-repeat center center;
     @media (max-width: $breakpoint-md) {
-     display: none;
+      display: none;
     }
+
     & i {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color:#fff;
+      color: #fff;
       font-size: 22px;
     }
 
@@ -88,6 +90,7 @@
     color: rgba(180, 102, 80, 1);
     position: relative;
     font-family: 'TTRamillas', serif;
+    text-transform: uppercase;
 
     &:hover {
 

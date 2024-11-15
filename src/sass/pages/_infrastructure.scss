@@ -20,6 +20,11 @@
 
   & .description {
     margin-bottom: 46px;
+    @include fontSize(14, 18);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: #fff;
   }
 
   &.location {
@@ -148,7 +153,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-
+          max-width: 50%;
           &-wrap {
             background: rgba(180, 102, 80, 1);
 
@@ -169,6 +174,7 @@
 
     &:nth-child(2) {
       flex-direction: row-reverse;
+
       & .developer {
         &__img {
           position: absolute;
@@ -222,15 +228,19 @@
 }
 
 .s-developer {
-
+  margin-top: 40px;
+  @media (max-width: $breakpoint-md) {
+    margin-top: 18px;
+  }
 
   & .number {
     &__wrap {
-      display: grid;
-      grid-template-columns: auto auto auto;
+      display: flex;
+
       gap: 3%;
       @media (max-width: $breakpoint-md) {
         grid-template-columns: auto auto;
+        flex-flow: column wrap;
       }
     }
 
@@ -239,9 +249,9 @@
       margin-right: 0;
     }
 
-    &__ {
+    &__item {
       @include fontSize(14, 17);
-
+      flex-grow: 1;
     }
   }
 }
