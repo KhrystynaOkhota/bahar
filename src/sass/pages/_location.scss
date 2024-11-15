@@ -175,6 +175,7 @@
 
 .s-quality {
   padding-top: 56px;
+
   & .heading {
     margin-bottom: 35px;
   }
@@ -190,13 +191,42 @@
 }
 
 .s-guide {
-  padding: 90px 0;
+
   background: rgba(143, 163, 153, 1);
   color: #fff;
 
   & .editor-style {
     & * {
       color: #fff;
+    }
+  }
+
+  &__inner {
+    padding: 90px 0;
+    @media (max-width: $breakpoint-md) {
+     padding: 36px 0 0 0 ;
+    }
+  }
+
+  & .row {
+    @media (min-width: $breakpoint-md) {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+    }
+  }
+
+  & .img {
+    mix-blend-mode: multiply;
+    max-height: 470px;
+
+    &__wrap {
+      margin-right: calc((-50vw + 650px) / 2);
+      margin-bottom: -90px;
+      @media (max-width: $breakpoint-md) {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
     }
   }
 }
