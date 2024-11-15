@@ -146,6 +146,18 @@
   &__item {
     margin-bottom: 94px;
 
+
+    @media (min-width: $breakpoint-md) {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 41px;
+
+    }
+
     &:nth-child(1) {
       & .developer {
         &__img {
@@ -154,13 +166,29 @@
           left: 50%;
           transform: translate(-50%, -50%);
           max-width: 50%;
+
           &-wrap {
             background: rgba(180, 102, 80, 1);
+            // clip-path: polygon(0 72px, 72px 0, calc(100% - 72px) 0, 100% 72px, 100% calc(100% - 72px), calc(100% - 72px) 100%, 72px 100%, 0 calc(100% - 72px));
+
+            // 1% 14%, 17% 0%, 80% 0%, 99% 15%, 100% 45%, 82% 54%, 100% 62%, 100% 87%, 84% 99%, 15% 99%, 1% 88%, 1% 60%, 17% 54%, 1% 43%
+            //clip-path: polygon(0 72px, 72px 0, calc(100% - 72px) 0, 100% 72px, 100% calc(50% - 72px), 90% 45%, 100% 55%, 100% calc(100% - 72px), calc(100% - 72px) 100%, 72px 100%, 0 calc(100% - 72px),     1% 59%, 13% 52%, 1% 38%);
+            // clip-path: polygon(0 72px, 72px 0, calc(100% - 72px) 0, 100% 72px, 100% calc(50% - 72px), 90% 45%, 100% 55%, 100% calc(100% - 72px), calc(100% - 72px) 100%, 72px 100%, 0 calc(100% - 72px), 0% 55%, 10% 45%, 0% 36%);
+
+            object-fit: cover;
+            clip-path: polygon(92.948% 50.505%, 100% 57.555%, 100% 93.07%, 93.07% 100%, 7.346% 100%, 0.418% 93.07%, 0.418% 57.555%, 7.468% 50.505%, 7.764% 50.209%, 7.468% 49.913%, 0.418% 42.864%, 0.418% 7.346%, 7.346% 0.418%, 93.07% 0.418%, 100% 7.346%, 100% 42.863%, 92.948% 49.913%, 92.652% 50.209%, 92.948% 50.505%);
+            @media (max-width: $breakpoint-md) {
+
+              margin-bottom: 18px;
+            }
 
             &:before {
               content: '';
               padding-bottom: 100%;
               display: block;
+              @media (max-width: $breakpoint-md) {
+                padding-bottom: 70%;
+              }
             }
           }
         }
@@ -174,6 +202,10 @@
 
     &:nth-child(2) {
       flex-direction: row-reverse;
+      @media (max-width: $breakpoint-md) {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+      }
 
       & .developer {
         &__img {
@@ -181,14 +213,32 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          object-fit: cover;
+          @media (max-width: $breakpoint-md) {
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
 
           &-wrap {
             margin-right: calc((-50vw + 650px) / 2);
+            @media (max-width: $breakpoint-md) {
+              margin-right: 0;
+              height: 250px;
+              width: calc(100% + 30px);
+              left: -15px;
+              margin-top:40px;
+            }
 
             &:before {
-              content: '';
-              padding-bottom: 100%;
-              display: block;
+              @media (max-width: $breakpoint-md) {
+                padding-bottom: 0;
+              }
+
             }
           }
         }
@@ -216,6 +266,7 @@
     line-height: 1.5;
     letter-spacing: 0.05em;
   }
+
 
   &__img {
     &-wrap {
@@ -254,4 +305,11 @@
       flex-grow: 1;
     }
   }
+
+  & .btn-primary {
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+  }
+
 }
