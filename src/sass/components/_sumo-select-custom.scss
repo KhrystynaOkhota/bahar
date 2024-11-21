@@ -3,7 +3,8 @@
 
 .SumoSelect {
   width: 100%;
-padding: 20px;
+  padding: 20px;
+
   &:after {
     content: '';
     position: absolute;
@@ -23,7 +24,8 @@ padding: 20px;
     transition: var(--transition);
     inset: 0;
 
-    clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
+   // clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
+    clip-path: polygon(0 4px,4px 0,calc(100% - 4px) 0,100% 4px,100% calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,0 calc(100% - 4px),0 4px,1px  calc(4px + 0.41px),1px calc(100% - 4px - 0.41px),calc(4px + 0.41px) calc(100% - 1px),calc(100% - 4px - 0.41px) calc(100% - 1px),calc(100% - 1px) calc(100% - 4px - 0.41px),calc(100% - 1px) calc(4px + 0.41px),calc(100% - 4px - 0.41px) 1px,calc(4px + 0.41px) 1px,1px calc(4px + 0.41px));
   }
 
   & > .CaptionCont {
@@ -100,7 +102,7 @@ padding: 20px;
         & label {
           font-size: 16px;
           font-weight: 300;
-         // font-family: "Merriweather", serif;
+          // font-family: "Merriweather", serif;
           @include transition(.4);
         }
 
@@ -151,7 +153,7 @@ padding: 20px;
     }
 
     & > .optWrapper {
-      top:100%;
+      top: 100%;
       pointer-events: all;
       visibility: visible;
       opacity: 1;

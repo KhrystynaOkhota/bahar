@@ -12,8 +12,9 @@
     font-size: -moz-calc(36px + (60 - 36) * ((100vw - 300px) / (1920 - 300)));
     font-size: calc(36px + (60 - 36) * ((100vw - 300px) / (1920 - 300)));
     @media (max-width: $breakpoint-md) {
-      margin-top:30px;
+      margin-top: 30px;
     }
+
     &:after {
       background: rgba(180, 102, 80, 1);
     }
@@ -38,9 +39,6 @@
       align-items: center;
     }
 
-    &__title, &__info {
-      @include fontSize(14, 16);
-    }
 
     &__title {
       display: block;
@@ -51,7 +49,42 @@
       }
     }
 
-    & i {
+    &__info {
+      margin-top: 24px;
+      @media (max-width: $breakpoint-md) {
+        margin: 0;
+        width: calc(100% - 37px);
+      }
+
+      & > * {
+        @include fontSize(14, 16);
+      }
+
+      & ul {
+        margin-left: 14px;
+
+        & li {
+          &:not(&:last-child) {
+            margin-right: 5px;
+          }
+
+          & i {
+            font-size: 15px;
+            color: rgba(180, 102, 80, 0.4);
+          }
+        }
+      }
+      &.align-center{
+        @media (max-width: $breakpoint-md) {
+          -webkit-box-pack: start;
+          -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    & > i {
       @include fontSize(20, 60);
       color: rgba(180, 102, 80, 1);
       padding-right: 12px;

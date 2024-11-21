@@ -74,6 +74,27 @@
         margin-left: auto;
         margin-right: 0;
       }
+
+      .tabs {
+        &-toggle {
+          @media (min-width: $breakpoint-md) {
+            justify-content: flex-end;
+          }
+        }
+
+        &-menu {
+          &:before {
+            @media (min-width: $breakpoint-md) {
+              background: #fff;
+            }
+          }
+
+          &.active {
+            background: #fff;
+            color: #000;
+          }
+        }
+      }
     }
   }
 
@@ -139,6 +160,28 @@
       background: rgba(180, 102, 80, 1);
     }
   }
+
+
+  @media (min-width: $breakpoint-md) {
+    .tabs-toggle {
+      gap: 20px;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+    }
+    .tabs-menu {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 15px;
+      text-align: center;
+      max-width: 298px;
+      min-width: 142px;
+      font-size: 14px;
+      min-height: 60px;
+    }
+  }
+
 }
 
 
@@ -231,7 +274,7 @@
               height: 250px;
               width: calc(100% + 30px);
               left: -15px;
-              margin-top:40px;
+              margin-top: 40px;
             }
 
             &:before {

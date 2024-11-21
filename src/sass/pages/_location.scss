@@ -45,6 +45,7 @@
 }
 
 .s-location {
+  padding:66px 0;
   &__inner {
     @media (min-width: $breakpoint-xl) {
       flex-direction: row-reverse;

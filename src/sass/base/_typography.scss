@@ -63,7 +63,13 @@
     color: $body-text;
   }
 }
+.icon-viber:before {
+  content: "\e90d";
 
+}
+.icon-whatsApp:before {
+  content: "\e90e";
+}
 .icon-ar-right:before {
   content: "\e90c";
 }
