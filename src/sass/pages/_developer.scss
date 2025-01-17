@@ -346,3 +346,39 @@
     left: 35px;
   }
 }
+
+.s-construction-progress {
+  & .swiper-entry {
+    position: relative;
+  }
+
+  .swiper-button {
+    &-prev, &-next {
+      height: 61px;
+      width: 72px;
+      position: absolute;
+      top: 27%;
+      background: url(../img/bg-ar.svg) center center no-repeat;
+    }
+
+    &-next {
+      right: -30px;
+      @media (max-width: 1300px) {
+        right:0;
+      }
+      & i{
+        transform: rotate(90deg);
+      }
+    }
+
+    &-prev {
+      left: -30px;
+      @media (max-width: 1300px) {
+        left:0;
+      }
+      & i{
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

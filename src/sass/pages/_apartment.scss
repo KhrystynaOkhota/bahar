@@ -86,12 +86,14 @@
     & .select-box {
       width: 100%;
       margin-bottom: 20px;
+      min-height: 58px;
       @media (max-width: $breakpoint-md) {
         margin-bottom: 10px;
       }
 
       & select {
         width: 100%;
+        opacity: 0;
       }
     }
 
@@ -202,8 +204,7 @@
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     overflow: hidden;
-    clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px));
-
+    clip-path:  polygon(0 4px, 4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px));
     &:before {
       content: '';
       position: absolute;
@@ -216,7 +217,8 @@
       z-index: 0;
       inset: 0;
       background: rgba(231, 221, 211, 1);
-      clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
+      clip-path: polygon(0 4px, 4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px), 0 4px, 1px calc(4px + 0.41px), 1px calc(100% - 4px - 0.41px), calc(4px + 0.41px) calc(100% - 1px), calc(100% - 4px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 4px - 0.41px), calc(100% - 1px) calc(4px + 0.41px), calc(100% - 4px - 0.41px) 1px, calc(4px + 0.41px) 1px, 1px calc(4px + 0.41px));
+
     }
 
     &:not(&:last-child) {
@@ -311,8 +313,6 @@
         font-weight: 400;
         line-height: 1.28;
         letter-spacing: 0.05em;
-
-
 
 
       }
@@ -446,6 +446,7 @@
 
 .s-apart-detail {
   padding: 40px 0 54px 0;
+  background: #fff;
   @media (max-width: $breakpoint-md) {
     padding: 30px 0;
   }

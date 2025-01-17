@@ -58,6 +58,7 @@
 
       & > * {
         @include fontSize(14, 16);
+        font-family: "Archivo", sans-serif;
       }
 
       & ul {
@@ -71,6 +72,9 @@
           & i {
             font-size: 15px;
             color: rgba(180, 102, 80, 0.4);
+            &.icon-viber{
+              font-size: 17px;
+            }
           }
         }
       }

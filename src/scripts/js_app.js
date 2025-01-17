@@ -139,7 +139,9 @@ jQuery(function ($) {
                 el: $p.find('.swiper-pagination')[0],
                 clickable: true,
                 renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    return '<span class="' + className + '">' + '0' +(index + 1) + "</span>";
+
+
                 },
             };
         if (!options.navigation)

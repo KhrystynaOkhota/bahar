@@ -314,7 +314,7 @@
 
     <section class="s-numbers">
         <div class="container">
-            <div class="row m-row">
+            <div class="row m-row number-wrapp">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 column">
                     <div class="number__item align-middle d-flex align-middle align-left">
                         <span class="number__heading text-xl">3</span>
@@ -465,7 +465,24 @@
             </div>
         </div>
     </section>
-
+    <div class="number-wrapp d-flex flex-column flex-sm-row | animated">
+        <div class="number-item">
+            <div class="h1 number-title"><b>3</b></div>
+            <div class="text light">Років на ринку</div>
+        </div>
+        <div class="number-item">
+            <div class="h1 number-title"><b>2</b></div>
+            <div class="text light">Об'єктів здано</div>
+        </div>
+        <div class="number-item">
+            <div class="h1 number-title"><b>6</b></div>
+            <div class="text light">Будинків в процесі</div>
+        </div>
+        <div class="number-item">
+            <div class="h1 number-title"><b>11000</b></div>
+            <div class="text light">Збудованої площі (м2)</div>
+        </div>
+    </div>
     <section class="s-video">
         <div class="container">
             <div class="row m-row">
@@ -498,123 +515,145 @@
         <img src="assets/img/decor-2.svg" alt="" class="decor decor-1">
         <div class="container">
             <div class="row m-row swiper-entry s-location-slider__inner">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+               <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
                     <div class="img__wrap --relative">
                         <img src="assets/img/location.png" alt="" class="img">
                     </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
-                    <h3 class="heading heading-font text-regular text-xl --relative">Расположение</h3>
-                    <div class="--relative">
+                </div>-->
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
+                    <h3 class="heading heading-font text-regular text-xl --relative">
+                        Расположение</h3>
+
                         <div class="swiper-container"
-                             data-options='{"slidesPerView":1, "spaceBetween": 15, "speed": 1200, "effect": "fade", "autoHeight": true, "centeredSlides": false,"loop": true}'>
+                             data-options='{"slidesPerView":1, "spaceBetween": 15, "speed": 1200, "autoHeight": true, "centeredSlides": false,"loop": true}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="location__item">
+                                        <div class="location__content">
 
-                                        <div class="location__title text-uppercase">
-                                            аэропорт 1
+                                            <div class="location__title text-uppercase">
+                                                аэропорт 1
+                                            </div>
+                                            <div class="location__text">
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor</p>
+                                                <p>incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                                    laoreet id
+                                                    donec ultrices.</p>
+                                                <p> At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                                    pellentesque
+                                                    elit ullamcorper dignissim cras tincidunt.
+                                                    Porttitor rhoncus dolor purus non enim praesent elementum.</p>
+                                            </div>
+                                            <a href="location.html" class="btn btn-transparent d-inline-block">подробнее</a>
                                         </div>
-                                        <div class="location__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
-                                            laoreet id
-                                            donec ultrices.
-                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
-                                            pellentesque
-                                            elit ullamcorper dignissim cras tincidunt.
-                                            Porttitor rhoncus dolor purus non enim praesent elementum.
-                                        </div>
-
-                                        <a href="" class="btn btn-transparent">
-                                            подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="location__item">
-
-                                        <div class="location__title text-uppercase">
-                                            аэропорт 2
-                                        </div>
-                                        <div class="location__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
-                                            laoreet id
-                                            donec ultrices.
-                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
-                                            pellentesque
-                                            elit ullamcorper dignissim cras tincidunt.
-                                            Porttitor rhoncus dolor purus non enim praesent elementum.
+                                        <div class="location__img-wrap --relative">
+                                            <img src="assets/img/location.png" alt="" class="location__img">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="location__item">
+                                        <div class="location__content">
 
-                                        <div class="location__title text-uppercase">
-                                            аэропорт 3
+                                            <div class="location__title text-uppercase">
+                                                аэропорт 1
+                                            </div>
+                                            <div class="location__text">
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor</p>
+                                                <p>incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                                    laoreet id
+                                                    donec ultrices.</p>
+                                                <p> At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                                    pellentesque
+                                                    elit ullamcorper dignissim cras tincidunt.
+                                                    Porttitor rhoncus dolor purus non enim praesent elementum.</p>
+                                            </div>
+                                            <a href="location.html" class="btn btn-transparent d-inline-block">подробнее</a>
                                         </div>
-                                        <div class="location__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
-                                            laoreet id
-                                            donec ultrices.
-                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
-                                            pellentesque
-                                            elit ullamcorper dignissim cras tincidunt.
-                                            Porttitor rhoncus dolor purus non enim praesent elementum.
+                                        <div class="location__img-wrap --relative">
+                                            <img src="assets/img/location.png" alt="" class="location__img">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="location__item">
+                                        <div class="location__content">
 
-                                        <div class="location__title text-uppercase">
-                                            аэропорт 4
+                                            <div class="location__title text-uppercase">
+                                                аэропорт 1
+                                            </div>
+                                            <div class="location__text">
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor</p>
+                                                <p>incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                                    laoreet id
+                                                    donec ultrices.</p>
+                                                <p> At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                                    pellentesque
+                                                    elit ullamcorper dignissim cras tincidunt.
+                                                    Porttitor rhoncus dolor purus non enim praesent elementum.</p>
+                                            </div>
+                                            <a href="location.html" class="btn btn-transparent d-inline-block">подробнее</a>
                                         </div>
-                                        <div class="location__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
-                                            laoreet id
-                                            donec ultrices.
-                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
-                                            pellentesque
-                                            elit ullamcorper dignissim cras tincidunt.
-                                            Porttitor rhoncus dolor purus non enim praesent elementum.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
-                                            laoreet id
-                                            donec ultrices.
-                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
-                                            pellentesque
-                                            elit ullamcorper dignissim cras tincidunt.
-                                            Porttitor rhoncus dolor purus non enim praesent elementum.
-
+                                        <div class="location__img-wrap --relative">
+                                            <img src="assets/img/location.png" alt="" class="location__img">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="location__item">
+                                        <div class="location__content">
 
-                                        <div class="location__title text-uppercase">
-                                            аэропорт 5
+                                            <div class="location__title text-uppercase">
+                                                аэропорт 1
+                                            </div>
+                                            <div class="location__text">
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor</p>
+                                                <p>incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                                    laoreet id
+                                                    donec ultrices.</p>
+                                                <p> At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                                    pellentesque
+                                                    elit ullamcorper dignissim cras tincidunt.
+                                                    Porttitor rhoncus dolor purus non enim praesent elementum.</p>
+                                            </div>
+                                            <a href="location.html" class="btn btn-transparent d-inline-block">подробнее</a>
                                         </div>
-                                        <div class="location__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
-                                            laoreet id
-                                            donec ultrices.
-                                            At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
-                                            pellentesque
-                                            elit ullamcorper dignissim cras tincidunt.
-                                            Porttitor rhoncus dolor purus non enim praesent elementum.
+                                        <div class="location__img-wrap --relative">
+                                            <img src="assets/img/location.png" alt="" class="location__img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="location__item">
+                                        <div class="location__content">
+
+                                            <div class="location__title text-uppercase">
+                                                аэропорт 1
+                                            </div>
+                                            <div class="location__text">
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor</p>
+                                                <p>incididunt ut labore et dolore magna aliqua. Tellus id interdum velit
+                                                    laoreet id
+                                                    donec ultrices.</p>
+                                                <p> At elementum eu facilisis sed odio morbi quis commodo. Rhoncus est
+                                                    pellentesque
+                                                    elit ullamcorper dignissim cras tincidunt.
+                                                    Porttitor rhoncus dolor purus non enim praesent elementum.</p>
+                                            </div>
+                                            <a href="location.html" class="btn btn-transparent d-inline-block">подробнее</a>
+                                        </div>
+                                        <div class="location__img-wrap --relative">
+                                            <img src="assets/img/location.png" alt="" class="location__img">
                                         </div>
                                     </div>
                                 </div>
@@ -833,7 +872,7 @@
                     <span class="d-none d-md-block">© Bahar Residence | 2023 </span>
                     <a href="">Политика конфиденциальности</a>
                 </div>
-                <div class="develop d-none align-middle align-right">
+                <div class="develop d-none d-md-flex align-middle align-right">
                     <div class="develop__text">Розробка</div>
                     <a href="" class="d-inline-flex align-items-center develop__link">
                         WEBTUNE
@@ -1093,6 +1132,38 @@
     setTimeout(function () {
         _functions.imagesLazyLoad();
     }, 100);
+</script>
+
+<script>
+    jQuery(function ($) {
+        const obsCounter = new IntersectionObserver(function (entries, observer) {
+            entries.forEach((entry) => {
+                    if (!entry.isIntersecting)
+                        return;
+                    entry.target.classList.add("|", "animated");
+                    $(entry.target).find(".number__heading").each(function () {
+                        $(this).prop("Counter", 0).animate({
+                            Counter: $(this).text(),
+                        }, {
+                            duration: 1500,
+                            easing: "swing",
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
+                            },
+                        });
+                    });
+                    observer.unobserve(entry.target);
+                }
+            );
+        });
+
+        document.querySelectorAll(".number-wrapp").forEach((block) => {
+            obsCounter.observe(block);
+        });
+
+    });
+
+
 </script>
 </body>
 </html>

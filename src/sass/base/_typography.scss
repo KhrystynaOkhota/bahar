@@ -63,13 +63,16 @@
     color: $body-text;
   }
 }
+
 .icon-viber:before {
   content: "\e90d";
 
 }
+
 .icon-whatsApp:before {
   content: "\e90e";
 }
+
 .icon-ar-right:before {
   content: "\e90c";
 }
@@ -159,8 +162,12 @@
     }
   }
 
-  &-font, & em {
-    font-family: 'FontspringDEMOTheseasons', serif;
+  &-font{
+    font-family: 'FontspringDEMOTheseasonsReg', serif;
+  }
+
+  & em {
+    font-family: 'FontspringDEMOTheseasonsIt', serif;
   }
 
   &__sub {

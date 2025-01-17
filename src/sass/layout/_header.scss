@@ -32,7 +32,7 @@
   }
 
   &__inner {
-    height: 138px;
+    height: 6.25em;
     position: relative;
     @media (max-width: $breakpoint-md) {
       height: 84px;
@@ -66,8 +66,8 @@
 
   & .logo {
     &__wrap {
-      width: 129px;
-      height: 98px;
+      width: 101px;
+      height: 75px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -250,7 +250,7 @@
 }
 
 :root {
-  --h-height: 8.625rem;
+  --h-height: 6.25rem;
 
   @media (max-width: $breakpoint-md) {
     --h-height: 5.25rem;
@@ -340,9 +340,12 @@ html.overflow-hidden, html.overflow-hidden body, html.overflow-menu, html.overfl
       }
 
       & a {
-        @include fontSize(20, 24);
+        font-size: 24px;
         font-family: 'TTRamillas', serif;
         color: #fff;
+        @media (max-width: $breakpoint-lg) {
+          font-size: 20px;
+        }
       }
     }
   }

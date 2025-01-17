@@ -154,10 +154,13 @@
   .develop {
 
     @media (min-width: $breakpoint-md) {
-      -webkit-box-pack: end;
-      -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      position: absolute;
+      bottom: 0;
+      left: 15px;
     }
     @media (max-width: $breakpoint-md) {
       -webkit-box-pack: center;
@@ -168,10 +171,11 @@
     }
 
     &__link, &__text {
-      margin-left: 10px;
       font-size: 16px;
       color: rgba(249, 244, 238, 1);
-
+    }
+    &__link{
+      margin-left: 10px;
     }
   }
 

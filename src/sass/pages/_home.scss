@@ -249,7 +249,7 @@
 
   & .social {
     &__list {
-      position: fixed;
+      position: absolute;
       left: 50px;
       top: 50%;
       -webkit-transform: translateY(-50%);
