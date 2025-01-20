@@ -89,6 +89,9 @@
   max-width: 1305px;
   margin: auto;
   padding: 0 10px;
+  @media (max-width: $breakpoint-md) {
+    padding: 0 15px;
+  }
 }
 
 .container-fluid {
@@ -98,8 +101,8 @@
   margin-right: auto;
   margin-left: auto;
   @media (max-width: $breakpoint-md) {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -128,6 +131,9 @@
 
 .m-row {
   margin: 0 -10px;
+  @media (max-width: $breakpoint-md) {
+    margin: 0 -15px;
+  }
   @media (max-width: $breakpoint-sm) {
     // margin: 0;
   }
@@ -168,7 +174,9 @@
 .column {
   padding: 0 10px;
   position: relative;
-
+  @media (max-width: $breakpoint-md) {
+    padding: 0 15px;
+  }
   @media (max-width: $breakpoint-sm) {
     // padding: 0;
   }

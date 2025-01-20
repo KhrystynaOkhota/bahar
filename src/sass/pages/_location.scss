@@ -71,10 +71,14 @@
     padding: 23px 0 35px 0;
   }
 
+  & .heading {
+
+  }
+
   & .btn-transparent {
     color: #EDC8B3;
     @media (max-width: $breakpoint-md) {
-      margin-left: 50px;
+      margin-left: 0;
     }
 
     &:before {
@@ -89,10 +93,15 @@
   }
 
   & .heading {
+
+    z-index: 777;
     margin-bottom: 60px;
     margin-top: 0;
     @media (max-width: $breakpoint-lg) {
-      margin: 17px 0 14px 0
+      margin: 17px 0 14px 0;
+
+      width: calc(100% + 50px);
+      left: -50px;
     }
 
   }
@@ -115,7 +124,7 @@
 
     &__wrap {
       position: relative;
-      padding-bottom: 70.5%;
+      padding-bottom: 100%;
     }
   }
 
@@ -123,8 +132,17 @@
     &__item {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-    //  align-items: center;
+      //  align-items: center;
       gap: 55px;
+      @media (min-width: $breakpoint-md) {
+        grid-auto-flow: dense;
+        direction: rtl;
+      }
+      @media (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr;
+        gap: 0;
+
+      }
     }
 
     &__title {
@@ -152,6 +170,15 @@
       }
     }
 
+    &__content {
+      // padding-top: 150px;
+      text-align: left;
+      padding-bottom: 20px;
+      @media (max-width: $breakpoint-md) {
+        margin-left: 50px;
+        width: calc(100% - 50px);
+      }
+    }
 
     &__img {
       position: absolute;
@@ -159,20 +186,22 @@
       left: 0;
       height: 100%;
       width: 100%;
+      object-fit: cover;
 
       &-wrap {
         position: relative;
         padding-bottom: 70.5%;
+        @media (max-width: $breakpoint-md) {
+          padding-bottom: 30%;
+          height: 300px;
+        }
       }
     }
   }
 
   .swiper {
     &-container {
-      @media (max-width: $breakpoint-md) {
-        margin-left: 50px;
-        width: calc(100% - 50px);
-      }
+
     }
 
     &-slide {
@@ -181,16 +210,16 @@
 
     &-pagination {
       position: absolute;
-      top: 50%;
-      transform:translateY(-50%);
+      top: 140px;
+      //transform: translateY(-50%);
       right: calc(100% + 34px);
       display: flex;
       flex-direction: column;
       justify-content: start;
       @media (max-width: $breakpoint-md) {
         right: auto;
-        left: 10px;
-        top: 4px;
+        left: 15px;
+        top: 385px;
       }
 
       &-bullet {
