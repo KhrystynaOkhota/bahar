@@ -109,6 +109,7 @@
       }
 
       &.prev {
+        transform: rotate(-90deg);
         margin-right: 30px;
         @media (max-width: $breakpoint-lg) {
           margin-right: 5px;
@@ -116,6 +117,7 @@
       }
 
       &.next {
+        transform: rotate(90deg);
         margin-left: 30px;
         @media (max-width: $breakpoint-lg) {
           margin-left: 5px;
@@ -123,14 +125,13 @@
       }
 
       &.current {
-        color: $whiteColor;
+        color: #b46650;
         font-weight: bold;
-        background-color: #A59389;
+
       }
 
       &:not(.next,.prev):hover {
-        background-color: #A59389;
-        color: $whiteColor;
+        color: #b46650;
       }
     }
   }

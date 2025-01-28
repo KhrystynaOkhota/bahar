@@ -204,7 +204,8 @@
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     overflow: hidden;
-    clip-path:  polygon(0 4px, 4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px));
+    clip-path: polygon(0 4px, 4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px));
+
     &:before {
       content: '';
       position: absolute;
@@ -598,7 +599,9 @@
         transition: var(--transition);
         inset: 0;
 
-        clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
+        //clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
+
+        clip-path: polygon(0 4px, 4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px), 0 4px, 1px calc(4px + 0.41px), 1px calc(100% - 4px - 0.41px), calc(4px + 0.41px) calc(100% - 1px), calc(100% - 4px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 4px - 0.41px), calc(100% - 1px) calc(4px + 0.41px), calc(100% - 4px - 0.41px) 1px, calc(4px + 0.41px) 1px, 1px calc(4px + 0.41px))
       }
     }
   }
@@ -654,7 +657,10 @@
   @media (min-width: $breakpoint-md) {
     padding: 19px 5px;
     text-align: center;
-    clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px));
+    // clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px));
+    clip-path: polygon(0 4px, 4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px));
+
+    // clip-path: polygon(0 4px,4px 0,calc(100% - 4px) 0,100% 4px,100% calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,0 calc(100% - 4px),0 4px,2px  calc(4px + 0.83px),2px calc(100% - 4px - 0.83px),calc(4px + 0.83px) calc(100% - 2px),calc(100% - 4px - 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 4px - 0.83px),calc(100% - 2px) calc(4px + 0.83px),calc(100% - 4px - 0.83px) 2px,calc(4px + 0.83px) 2px,2px calc(4px + 0.83px));
 
 
     &:before {
@@ -669,7 +675,10 @@
       z-index: 0;
       inset: 0;
       background: rgba(180, 102, 80, 1);
-      clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
+      //  clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
+      clip-path: polygon(0 4px, 4px 0, calc(100% - 4px) 0, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0 calc(100% - 4px), 0 4px, 1px calc(4px + 0.41px), 1px calc(100% - 4px - 0.41px), calc(4px + 0.41px) calc(100% - 1px), calc(100% - 4px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 4px - 0.41px), calc(100% - 1px) calc(4px + 0.41px), calc(100% - 4px - 0.41px) 1px, calc(4px + 0.41px) 1px, 1px calc(4px + 0.41px));
+
+
     }
 
     &.active {
@@ -689,13 +698,28 @@
 @media (max-width: $breakpoint-md) {
   .tabs-title {
     cursor: pointer;
-    padding: 19px;
+    padding: 19px 40px 19px 19px;
     font-family: 'TTRamillas', serif;
     display: block;
     font-size: 16px;
     background: rgba(180, 102, 80, 1);
     color: rgba(255, 255, 255, 1);
     clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px));
+
+
+    text-align: left;
+
+    &:after{
+
+      content: "\e902";
+      font-family: 'icomoon' !important;
+
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
   }
   .tabs-title.active + .tabs-toggle {
     pointer-events: all;

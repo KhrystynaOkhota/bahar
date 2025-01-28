@@ -80,6 +80,13 @@
   }
 
   & .contact {
+    &__list {
+      @media (max-width: $breakpoint-md) {
+        width: max-content;
+        margin: 0 auto;
+      }
+    }
+
     &__item {
       & + .contact__item {
         margin-top: 25px;
@@ -93,10 +100,9 @@
       color: rgba(249, 244, 238, 1);
       font-size: 16px;
       @media (max-width: $breakpoint-md) {
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
       }
 
       & i {
@@ -174,7 +180,8 @@
       font-size: 16px;
       color: rgba(249, 244, 238, 1);
     }
-    &__link{
+
+    &__link {
       margin-left: 10px;
     }
   }

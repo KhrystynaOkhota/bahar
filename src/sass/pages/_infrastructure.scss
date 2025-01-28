@@ -76,13 +76,33 @@
       }
 
       .tabs {
+        &-title {
+          text-align: left;
+          background: #fff;
+          color: #000;
+
+          & i {
+            position: absolute;
+            right: 22px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
         &-toggle {
           @media (min-width: $breakpoint-md) {
             justify-content: flex-end;
           }
+          @media (max-width: $breakpoint-md) {
+            background: #fff;
+          }
         }
 
         &-menu {
+          @media (max-width: $breakpoint-md) {
+            color: #000;
+          }
+
           &:before {
             @media (min-width: $breakpoint-md) {
               background: #fff;
@@ -179,10 +199,22 @@
       min-width: 142px;
       font-size: 14px;
       min-height: 60px;
-background: red;
-      clip-path: polygon(4px 0px, calc(100% - 4px) 0px, 100% 4px, 100% calc(50% - 4px), calc(100% - 2px) 50%, 100% calc(50% + 4px), 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0px calc(100% - 4px), 0px calc(50% + 4px), 2px 50%, 0px calc(50% - 4px), 0px 4px);
+      //background: red;
+      ///clip-path: polygon(4px 0px, calc(100% - 4px) 0px, 100% 4px, 100% calc(50% - 4px), calc(100% - 2px) 50%, 100% calc(50% + 4px), 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0px calc(100% - 4px), 0px calc(50% + 4px), 2px 50%, 0px calc(50% - 4px), 0px 4px);
 
       //clip-path: polygon(4px 0px, calc(100% - 4px) 0px, 100% 4px, 100% calc(50% - 4px), calc(100% - 2px) 50%, 100% calc(50% + 4px), 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0px calc(100% - 4px), 0px calc(50% + 4px), 2px 50%, 0px calc(50% - 4px), 0px 4px);
+
+
+      clip-path: none;
+
+      &:before {
+
+      }
+
+      &.active {
+        clip-path: polygon(4px 0px, calc(100% - 4px) 0px, 100% 4px, 100% calc(50% - 4px), calc(100% - 2px) 50%, 100% calc(50% + 4px), 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0px calc(100% - 4px), 0px calc(50% + 4px), 2px 50%, 0px calc(50% - 4px), 0px 4px);
+
+      }
     }
   }
 

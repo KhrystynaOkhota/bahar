@@ -157,7 +157,7 @@
         font-size: 16px;
         font-family: 'TTRamillas', serif;
         @include transition(.5);
-
+text-transform: uppercase;
         &:hover {
 
         }
@@ -200,7 +200,7 @@
 
     & > span {
 
-      height: 1.5px;
+      height: 1px;
       background-color: $whiteColor;
       border-radius: 1.5px;
       @include transition(.5);
