@@ -49,6 +49,46 @@
   src: url('../fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
 }
 
+/*The Seasons*/
+@font-face {
+  font-family: 'TheSeasons';
+  font-weight: 300;
+  src: url('../fonts/TheSeasonsLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TheSeasons';
+  font-weight: 300;
+  font-style: italic;
+  src: url('../fonts/TheSeasonsLightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TheSeasons';
+  font-weight: 700;
+  src: url('../fonts/TheSeasonsBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TheSeasons';
+  font-weight: 700;
+  font-style: italic;
+  src: url('../fonts/TheSeasonsBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'TheSeasons';
+  font-weight: 400;
+  src: url('../fonts/TheSeasonsRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TheSeasons';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../fonts/TheSeasonsItalic.woff') format('woff');
+}
 
 /*Anticva*/
 

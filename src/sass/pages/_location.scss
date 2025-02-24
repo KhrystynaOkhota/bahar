@@ -160,6 +160,7 @@
       color: rgba(255, 255, 255, 0.5);
       font-size: 17px;
       line-height: 1.4;
+      direction: ltr;
       @media (max-width: $breakpoint-md) {
         margin-bottom: 18px;
       }

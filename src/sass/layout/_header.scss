@@ -157,7 +157,8 @@
         font-size: 16px;
         font-family: 'TTRamillas', serif;
         @include transition(.5);
-text-transform: uppercase;
+        text-transform: uppercase;
+
         &:hover {
 
         }
@@ -322,7 +323,9 @@ html.overflow-hidden, html.overflow-hidden body, html.overflow-menu, html.overfl
 
       padding: 43px 20px;
     }
-
+    @media screen and (min-width: $breakpoint-lg) and (max-height: 900px) {
+      gap: 10px;
+    }
     @media (max-width: 360px) {
 
       padding: 30px 20px 0 20px;
@@ -333,18 +336,22 @@ html.overflow-hidden, html.overflow-hidden body, html.overflow-menu, html.overfl
       &:nth-child(1), &:nth-child(2), &:nth-child(3) {
         @media (min-width: $breakpoint-lg) {
           & a {
-            font-size: 40px;
+            /*font-size: 40px;*/
           }
 
         }
       }
 
       & a {
-        font-size: 24px;
+        font-size: 40px;
         font-family: 'TTRamillas', serif;
         color: #fff;
         @media (max-width: $breakpoint-lg) {
           font-size: 20px;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) and (max-height: 600px) {
+          font-size: 25px;
         }
       }
     }

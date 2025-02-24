@@ -162,12 +162,22 @@
     }
   }
 
-  &-font{
-    font-family: 'FontspringDEMOTheseasonsReg', serif;
+  &-font {
+    font-family: 'TheSeasons', serif;
+    font-weight: 400;
   }
 
   & em {
-    font-family: 'FontspringDEMOTheseasonsIt', serif;
+    font-family: 'TheSeasons', serif;
+    font-weight: 400;
+  }
+
+  &-font-TTRamillas {
+    font-family: 'TTRamillas', serif;
+
+    & em {
+      font-family: 'TTRamillas', serif;
+    }
   }
 
   &__sub {
