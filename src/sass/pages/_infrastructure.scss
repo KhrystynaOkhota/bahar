@@ -99,8 +99,10 @@
         }
 
         &-menu {
+          border: 1px solid #fff;
           @media (max-width: $breakpoint-md) {
             color: #000;
+
           }
 
           &:before {
@@ -159,14 +161,14 @@
       &-wrap {
         position: relative;
         padding-bottom: 100%;
-        -webkit-mask-size: contain;
+      /*  -webkit-mask-size: contain;
         mask-size: contain;
         -webkit-mask-image: url(../img/bg-mask.svg);
         mask-image: url(../img/bg-mask.svg);
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
         -webkit-mask-position: center center;
-        mask-position: center center;
+        mask-position: center center;*/
       }
     }
   }
@@ -205,14 +207,14 @@
       //clip-path: polygon(4px 0px, calc(100% - 4px) 0px, 100% 4px, 100% calc(50% - 4px), calc(100% - 2px) 50%, 100% calc(50% + 4px), 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0px calc(100% - 4px), 0px calc(50% + 4px), 2px 50%, 0px calc(50% - 4px), 0px 4px);
 
 
-      clip-path: none;
+     // clip-path: none;
 
       &:before {
 
       }
 
       &.active {
-        clip-path: polygon(4px 0px, calc(100% - 4px) 0px, 100% 4px, 100% calc(50% - 4px), calc(100% - 2px) 50%, 100% calc(50% + 4px), 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0px calc(100% - 4px), 0px calc(50% + 4px), 2px 50%, 0px calc(50% - 4px), 0px 4px);
+        //clip-path: polygon(4px 0px, calc(100% - 4px) 0px, 100% 4px, 100% calc(50% - 4px), calc(100% - 2px) 50%, 100% calc(50% + 4px), 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0px calc(100% - 4px), 0px calc(50% + 4px), 2px 50%, 0px calc(50% - 4px), 0px 4px);
 
       }
     }
@@ -255,7 +257,7 @@
             // clip-path: polygon(0 72px, 72px 0, calc(100% - 72px) 0, 100% 72px, 100% calc(50% - 72px), 90% 45%, 100% 55%, 100% calc(100% - 72px), calc(100% - 72px) 100%, 72px 100%, 0 calc(100% - 72px), 0% 55%, 10% 45%, 0% 36%);
 
             object-fit: cover;
-            clip-path: polygon(92.948% 50.505%, 100% 57.555%, 100% 93.07%, 93.07% 100%, 7.346% 100%, 0.418% 93.07%, 0.418% 57.555%, 7.468% 50.505%, 7.764% 50.209%, 7.468% 49.913%, 0.418% 42.864%, 0.418% 7.346%, 7.346% 0.418%, 93.07% 0.418%, 100% 7.346%, 100% 42.863%, 92.948% 49.913%, 92.652% 50.209%, 92.948% 50.505%);
+          //  clip-path: polygon(92.948% 50.505%, 100% 57.555%, 100% 93.07%, 93.07% 100%, 7.346% 100%, 0.418% 93.07%, 0.418% 57.555%, 7.468% 50.505%, 7.764% 50.209%, 7.468% 49.913%, 0.418% 42.864%, 0.418% 7.346%, 7.346% 0.418%, 93.07% 0.418%, 100% 7.346%, 100% 42.863%, 92.948% 49.913%, 92.652% 50.209%, 92.948% 50.505%);
             @media (max-width: $breakpoint-md) {
 
               margin-bottom: 18px;

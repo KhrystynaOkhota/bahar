@@ -19,7 +19,7 @@
     width: 105px;
     font-size: 60px;
     font-style: italic;
-   // font-family: 'FontspringDEMOTheseasons', serif;
+    // font-family: 'FontspringDEMOTheseasons', serif;
     @media (max-width: $breakpoint-md) {
       width: 100%;
       margin: 0;
@@ -101,21 +101,22 @@
     &-wrap {
       height: 120px;
       width: 120px;
+      border: 1px solid #fff;
       @media (max-width: $breakpoint-md) {
         height: 60px;
         width: 60px;
       }
 
       &:after {
-        content: '';
+        //content: '';
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-       /* background: #fff;
-        clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
-*/
+        /* background: #fff;
+         clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
+ */
 
         background: url("../img/bg-principles.svg") center;
         background-size: contain;
@@ -216,7 +217,7 @@
          -webkit-mask-position: center center;
          mask-position: center center;
  */
-        clip-path: polygon(92.948% 50.505%, 100% 57.555%, 100% 93.07%, 93.07% 100%, 7.346% 100%, 0.418% 93.07%, 0.418% 57.555%, 7.468% 50.505%, 7.764% 50.209%, 7.468% 49.913%, 0.418% 42.864%, 0.418% 7.346%, 7.346% 0.418%, 93.07% 0.418%, 100% 7.346%, 100% 42.863%, 92.948% 49.913%, 92.652% 50.209%, 92.948% 50.505%);
+        //  clip-path: polygon(92.948% 50.505%, 100% 57.555%, 100% 93.07%, 93.07% 100%, 7.346% 100%, 0.418% 93.07%, 0.418% 57.555%, 7.468% 50.505%, 7.764% 50.209%, 7.468% 49.913%, 0.418% 42.864%, 0.418% 7.346%, 7.346% 0.418%, 93.07% 0.418%, 100% 7.346%, 100% 42.863%, 92.948% 49.913%, 92.652% 50.209%, 92.948% 50.505%);
 
         &__wrap {
           position: relative;

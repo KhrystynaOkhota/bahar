@@ -33,7 +33,7 @@
 
    // clip-path: polygon(8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 100% calc(50% + 8px), 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px), 0px calc(50% + 8px), 8px 100%, 0px calc(50% - 8px), 0px 8px);
     //background-color: #c2eb47
-    clip-path: polygon(4px 0px, calc(100% - 4px) 0px, 100% 4px, 100% calc(50% - 4px), calc(100% - 2px) 50%, 100% calc(50% + 4px), 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0px calc(100% - 4px), 0px calc(50% + 4px), 2px 50%, 0px calc(50% - 4px), 0px 4px);
+   // clip-path: polygon(4px 0px, calc(100% - 4px) 0px, 100% 4px, 100% calc(50% - 4px), calc(100% - 2px) 50%, 100% calc(50% + 4px), 100% calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 0px calc(100% - 4px), 0px calc(50% + 4px), 2px 50%, 0px calc(50% - 4px), 0px 4px);
 
     //clip-path: polygon(4px 0,calc(100% - 4px) 0,100% 4px,100% calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,0 calc(100% - 4px),0 4px,1px  calc(4px + 0.41px),1px calc(100% - 4px - 0.41px),calc(4px + 0.41px) calc(100% - 1px),calc(100% - 4px - 0.41px) calc(100% - 1px),calc(100% - 1px) calc(100% - 4px - 0.41px),calc(100% - 1px) calc(4px + 0.41px),calc(100% - 4px - 0.41px) 1px,calc(4px + 0.41px) 1px,1px calc(4px + 0.41px));
 
@@ -101,6 +101,7 @@
 
   &-transparent {
     color: rgba(180, 102, 80, 1);
+    border: 1px solid  rgba(180, 102, 80, 1);
     position: relative;
     font-family: 'TTRamillas', serif;
     text-transform: uppercase;
@@ -110,7 +111,7 @@
     }
 
     &:before {
-      content: '';
+     // content: '';
       position: absolute;
       top: 0;
       bottom: 0;
@@ -130,12 +131,12 @@
        clip-path: polygon(calc(100% - 1px) 21px, calc(100% - 1px) 100%, 100% 100%, 100% 20px, calc(100% - 20px) 0%, 0% 0%, 0% calc(100% - 20px), 20px 100%, 100% 100%, 100% calc(100% - 1px), 21px calc(100% - 1px), 1px calc(100% - 21px), 1px 1px, calc(100% - 21px) 1px);
       */
 
-      inset: 0;
+     // inset: 0;
       background: rgba(180, 102, 80, 0.4);
      // clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px calc(8px + 0.41px), 1px calc(100% - 8px - 0.41px), calc(8px + 0.41px) calc(100% - 1px), calc(100% - 8px - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px - 0.41px), calc(100% - 1px) calc(8px + 0.41px), calc(100% - 8px - 0.41px) 1px, calc(8px + 0.41px) 1px, 1px calc(8px + 0.41px));
       //clip-path: polygon( 98.786% 49.648%,98.737% 50%,98.786% 50.353%,99.752% 57.328%,99.752% 92.51%,97.775% 99.167%,2.224% 99.167%,0.248% 92.51%,0.248% 57.368%,1.451% 50.42%,1.524% 50%,1.451% 49.58%,0.248% 42.632%,0.248% 7.488%,2.224% 0.833%,97.775% 0.833%,99.752% 7.488%,99.752% 42.673%,98.786% 49.648% );
      // clip-path: polygon( 99.788% 26.191%,99.788% 33.333%,99.788% 40.476%,99.788% 92.488%,98.347% 99.167%,1.605% 99.167%,0.164% 92.488%,0.164% 40.476%,0.164% 33.333%,0.164% 26.191%,0.164% 7.51%,1.605% 0.833%,98.347% 0.833%,99.788% 7.51%,99.788% 26.191% );
-      clip-path: polygon(0 4px,4px 0,calc(100% - 4px) 0,100% 4px,100% calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,0 calc(100% - 4px),0 4px,1px  calc(4px + 0.41px),1px calc(100% - 4px - 0.41px),calc(4px + 0.41px) calc(100% - 1px),calc(100% - 4px - 0.41px) calc(100% - 1px),calc(100% - 1px) calc(100% - 4px - 0.41px),calc(100% - 1px) calc(4px + 0.41px),calc(100% - 4px - 0.41px) 1px,calc(4px + 0.41px) 1px,1px calc(4px + 0.41px));
+      //clip-path: polygon(0 4px,4px 0,calc(100% - 4px) 0,100% 4px,100% calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,0 calc(100% - 4px),0 4px,1px  calc(4px + 0.41px),1px calc(100% - 4px - 0.41px),calc(4px + 0.41px) calc(100% - 1px),calc(100% - 4px - 0.41px) calc(100% - 1px),calc(100% - 1px) calc(100% - 4px - 0.41px),calc(100% - 1px) calc(4px + 0.41px),calc(100% - 4px - 0.41px) 1px,calc(4px + 0.41px) 1px,1px calc(4px + 0.41px));
 
     }
   }
