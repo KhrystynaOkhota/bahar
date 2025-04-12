@@ -9,14 +9,17 @@
     &__grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 40px 20px;
+      @media (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr;
+      }
     }
 
     &__item {
-      margin-bottom: 40px;
+     /* margin-bottom: 40px;
       @media (max-width: $breakpoint-md) {
         margin-bottom: 32px;
-      }
+      }*/
     }
 
     &__info {
@@ -367,7 +370,7 @@
   margin-bottom: 50px;
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 22px;
   }
 
@@ -381,4 +384,8 @@
       }
     }
   }
+}
+
+.article__item + .keep-touch {
+  margin-top:20px;
 }
