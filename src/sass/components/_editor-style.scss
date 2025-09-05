@@ -9,6 +9,10 @@
     font-weight: normal;
     color: #0000;
 
+    & b, & strong {
+      font-weight: bold;
+    }
+
     & > * {
       &:last-child {
         margin-bottom: 0;
@@ -33,7 +37,7 @@
       font-weight: bold;
       margin-bottom: 18px;
       line-height: 1.25;
-      color:#000;
+      color: #000;
     }
 
     & h2 {

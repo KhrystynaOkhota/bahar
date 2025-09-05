@@ -39,7 +39,7 @@
        mask-repeat: no-repeat;
        -webkit-mask-position: center center;
        mask-position: center center;*/
-     // clip-path: polygon(92.948% 50.505%, 100% 57.555%, 100% 93.07%, 93.07% 100%, 7.346% 100%, 0.418% 93.07%, 0.418% 57.555%, 7.468% 50.505%, 7.764% 50.209%, 7.468% 49.913%, 0.418% 42.864%, 0.418% 7.346%, 7.346% 0.418%, 93.07% 0.418%, 100% 7.346%, 100% 42.863%, 92.948% 49.913%, 92.652% 50.209%, 92.948% 50.505%);
+      // clip-path: polygon(92.948% 50.505%, 100% 57.555%, 100% 93.07%, 93.07% 100%, 7.346% 100%, 0.418% 93.07%, 0.418% 57.555%, 7.468% 50.505%, 7.764% 50.209%, 7.468% 49.913%, 0.418% 42.864%, 0.418% 7.346%, 7.346% 0.418%, 93.07% 0.418%, 100% 7.346%, 100% 42.863%, 92.948% 49.913%, 92.652% 50.209%, 92.948% 50.505%);
       margin-bottom: 32px;
     }
   }
@@ -277,6 +277,36 @@
         }
       }
     }
+
+    &-button-next, &-button-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #b46650;
+      border-radius: 0;
+      @media (max-width: $breakpoint-md) {
+        top: 140px;
+      }
+    }
+
+    &-button-prev {
+      left: calc(50% + 27.5px);
+      @media (max-width: $breakpoint-md) {
+        left: 0;
+      }
+
+      & i {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &-button-next {
+
+      & i {
+        transform: rotate(90deg);
+      }
+    }
+
   }
 }
 
