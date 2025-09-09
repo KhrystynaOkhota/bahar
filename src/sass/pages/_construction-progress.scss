@@ -43,14 +43,19 @@
     }
 
     &-slide {
-      @include transition(.5);
+
 
       &:not(.swiper-slide-active) {
-        transform: scale(0.95);
+        & .progress-gallery {
+          transform: scale(0.95);
+        }
       }
 
       &-active {
-        transform: scale(1.05);
+        & .progress-gallery {
+          transform: scale(1.08);
+          z-index: 6;
+        }
       }
 
     }
@@ -64,11 +69,14 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-
-
       height: 61px;
       width: 72px;
-      background: url(../img/bg-ar.svg) center center no-repeat;
+      background: url(../img/bg-ar-white.svg) center center no-repeat;
+
+      & i {
+        @include transition(.5);
+      }
+
       @media (max-width: $breakpoint-md) {
         display: none;
       }
@@ -88,6 +96,12 @@
           transform: rotate(-90deg);
         }
 
+      }
+
+      &:hover {
+        & i {
+          color: #b46650;
+        }
       }
     }
   }
@@ -117,6 +131,7 @@
       flex: 0 0 222px;
       max-width: 222px;
     }
+
     & .icon-dot {
       display: none;
       width: 7px;
@@ -144,24 +159,31 @@
 
     &.active {
       color: #fff;
+      @media (max-width: $breakpoint-md) {
+        color: #2c4844;
+      }
 
       & .icon-dot {
         background: #fff;
+        @media (max-width: $breakpoint-md) {
+          color:#2c4844;
+        }
       }
     }
   }
 
-  .gallery-item {
+  & .progress-gallery {
     position: relative;
+    @include transition(.5);
 
     &__content {
       position: relative;
-      padding-bottom: 70%;
+      padding-bottom: 45%;
       @media (max-width: $breakpoint-md) {
         padding-bottom: 90%;
       }
 
-      & img, & video {
+      & img, & iframe {
         position: absolute;
         top: 0;
         left: 0;
@@ -176,7 +198,10 @@
   .tabs-toggle {
     display: flex;
     @media (max-width: $breakpoint-lg) {
-     gap:15px;
+      gap: 15px;
+    }
+    @media (max-width: $breakpoint-md) {
+      display: block;
     }
   }
 
@@ -188,6 +213,7 @@
     @media (max-width: $breakpoint-lg) {
       min-width: 190px;
     }
+
     & > .CaptionCont span, & > .CaptionCont span.placeholder {
       font-style: normal;
       font-size: 16px;
